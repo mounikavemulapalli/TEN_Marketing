@@ -1,5 +1,6 @@
 @import url(https://db.onlinewebfonts.com/c/69c14b7245e9a736fa48c93a9209d0bf?family=Rosewood+Regular);
 @import url(https://db.onlinewebfonts.com/c/33ca94f43a53fc634323a6fe191ffd64?family=Trend+Sans+W00+Four);
+@import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 body {
   margin: 0; /* Remove default body margin */
   background: none;
@@ -16,7 +17,7 @@ body {
   background-position: center top; /* Center the image */
   background-attachment: fixed; /* Fixed background */
   position: absolute; /* Fixed positioning */
-  top: 8%; /* Start from the top */
+  top: 4%; /* Start from the top */
   left: 0; /* Start from the left */
   width: 100%; /* Full width */
   min-height: 800vh; /* Minimum height of the viewport */
@@ -40,10 +41,10 @@ body {
 /* Home section container adjustments */
 .home-container {
   background-color: rgba(
-    168,
-    230,
-    162,
-    0.8
+    170,
+    231,
+    192,
+    1
   ); /* Fallback color with transparency */
   text-align: center;
   padding: 40px 10px;
@@ -112,7 +113,10 @@ body {
   margin-bottom: 20px; /* Spacing below the title */
   text-decoration: underline;
 }
-
+.description-text {
+  font-family: "Overlock";
+  font-weight: bold;
+}
 .who-are-we-description {
   font-size: 22px; /* Set the font size for the description */
   color: #000; /* Text color */
@@ -253,7 +257,7 @@ body {
   text-align: center; /* Center text alignment */
   z-index: 1; /* Ensure the text appears above the image */
   padding: 20px; /* Optional: padding for better spacing */
-  font-family: "open sans, sans-serif"; /* Custom font */
+  font-family: "overlock, sans-serif"; /* Custom font */
   font-weight: bold;
 }
 .additional-image1 {
@@ -380,6 +384,9 @@ body {
   display: inline-block; /* Ensure it sits next to the image */
   padding-left: 30px;
 }
+.logo svg {
+  margin-left: -500px;
+}
 .testimonals-p {
   font-size: 22px;
   color: black;
@@ -430,7 +437,7 @@ body {
   z-index: 10; /* Ensure it's above other content */
   background-color: #000;
   color: black; /* Change text color to black for visibility */
-  padding: 20px; /* Adjust padding as necessary */
+  padding: 10px; /* Adjust padding as necessary */
   justify-content: space-between;
   align-items: center;
 }
@@ -438,13 +445,13 @@ body {
 .nav-links {
   list-style-type: none;
   display: flex;
-  gap: 30px; /* Space between each link */
+  gap: 10px; /* Space between each link */
 }
 
 .nav-links li a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   padding: 5px 10px;
 }
@@ -464,13 +471,13 @@ body {
 }
 .logo {
   display: flex;
-  align-items: flex-start; /* Aligns items to the start of the flex container */
+  align-items: flex-start;
 }
 
 .logo-text {
   display: flex;
   flex-direction: column; /* Stack the text vertically */
-  margin-right: 700px; /* Space between logo and text */
+  margin: auto;
   line-height: 2dvw;
 }
 
@@ -492,4 +499,187 @@ body {
   font-size: 28px;
   margin-right: 130px;
   font-family: "Trend Sans W00 Four";
+}
+
+/*Responsiveness*/
+/* Mobile (smaller than 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .logo-text {
+    margin-right: 0; /* Remove margin on smaller screens */
+  }
+
+  .the-text,
+  .Entre-text,
+  .network-text {
+    font-size: 18px; /* Adjust text size for small screens */
+    margin-right: 0; /* Remove excessive margins */
+  }
+
+  .home-container {
+    padding: 20px 5px;
+    margin: 0 2vw; /* Smaller margin on smaller screens */
+    max-width: 95%; /* Increase width */
+    clip-path: none; /* Remove the complex clipping on small screens */
+    text-align: center;
+  }
+
+  .description-text {
+    font-size: 16px;
+  }
+
+  .who-are-we-title {
+    font-size: 28px;
+  }
+
+  .who-are-we-description {
+    font-size: 18px;
+  }
+
+  .read-more-button {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .overlay-text,
+  .subtext-overlay {
+    font-size: 2.5rem;
+  }
+
+  .testimonals-container img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .split-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet (between 600px and 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .logo-text {
+    margin-right: 50px; /* Reduce margin for tablet screens */
+  }
+
+  .the-text,
+  .Entre-text,
+  .network-text {
+    font-size: 24px;
+  }
+
+  .home-container {
+    padding: 30px 8px;
+    margin: 0 4vw;
+    max-width: 90%;
+  }
+
+  .description-text {
+    font-size: 18px;
+  }
+
+  .who-are-we-title {
+    font-size: 32px;
+  }
+
+  .who-are-we-description {
+    font-size: 20px;
+  }
+
+  .read-more-button {
+    font-size: 17px;
+  }
+
+  .overlay-text,
+  .subtext-overlay {
+    font-size: 3.5rem;
+  }
+
+  .testimonals-container img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .split-text {
+    font-size: 1.3rem;
+  }
+}
+
+/* Large screens (1025px and above) */
+@media (min-width: 1025px) {
+  .navbar {
+    padding: 20px 50px;
+  }
+
+  .nav-links {
+    gap: 30px;
+  }
+
+  .logo-text {
+    margin-right: 150px;
+  }
+
+  .the-text,
+  .Entre-text,
+  .network-text {
+    font-size: 28px;
+  }
+
+  .home-container {
+    padding: 40px 10px;
+    margin: 0 3vw;
+    max-width: 90%;
+  }
+
+  .description-text {
+    font-size: 22px;
+  }
+
+  .who-are-we-title {
+    font-size: 36px;
+  }
+
+  .who-are-we-description {
+    font-size: 22px;
+  }
+
+  .read-more-button {
+    font-size: 18px;
+  }
+
+  .overlay-text,
+  .subtext-overlay {
+    font-size: 4rem;
+  }
+
+  .testimonals-container img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .split-text {
+    font-size: 1.5rem;
+  }
 }

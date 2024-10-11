@@ -1,5 +1,6 @@
 import React from "react";
 import LOGOSVG from "./files/LOGOSVG"; // Adjust the path as necessary
+import { useMediaQuery } from "react-responsive";
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
           <span className='the-text'>The </span>
           <span className='Entre-text'>Entrepreneurship</span>
           <span className='network-text'>Network</span>
-        </div>{" "}
+        </div>
         {/* Added text next to the logo */}
       </div>
       <nav className='navbar'>
