@@ -1,0 +1,495 @@
+@import url(https://db.onlinewebfonts.com/c/69c14b7245e9a736fa48c93a9209d0bf?family=Rosewood+Regular);
+@import url(https://db.onlinewebfonts.com/c/33ca94f43a53fc634323a6fe191ffd64?family=Trend+Sans+W00+Four);
+body {
+  margin: 0; /* Remove default body margin */
+  background: none;
+}
+
+/* Other Sections */
+.others {
+  padding-top: 30px; /* This can remain or be adjusted as needed */
+}
+/* Fixed background for the entire page */
+.fixed-background {
+  background-image: url("https://static.wixstatic.com/media/c3e3003d46a34414812aa2c189570a2c.jpg/v1/fill/w_1800,h_1296,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c3e3003d46a34414812aa2c189570a2c.jpg"); /* Your fixed background image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center top; /* Center the image */
+  background-attachment: fixed; /* Fixed background */
+  position: absolute; /* Fixed positioning */
+  top: 8%; /* Start from the top */
+  left: 0; /* Start from the left */
+  width: 100%; /* Full width */
+  min-height: 800vh; /* Minimum height of the viewport */
+  z-index: -1; /* Ensure it is behind other content */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: scroll; /* Allow vertical scrolling if necessary */
+}
+
+/* Adjust overlay as necessary */
+.fixed-background::before {
+  content: "";
+  position: absolute; /* Position absolute to cover the entire background */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.43); /* Light overlay */
+  z-index: -1; /* Place it below the content */
+}
+
+/* Home section container adjustments */
+.home-container {
+  background-color: rgba(
+    168,
+    230,
+    162,
+    0.8
+  ); /* Fallback color with transparency */
+  text-align: center;
+  padding: 40px 10px;
+  margin: 0vw 3vw; /* Add margin on left and right */
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 70%, 50% 100%, 15% 70%, 0 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px; /* Adjust this height as necessary */
+  max-width: 90%; /* Increase width based on your layout */
+  transform: translateY(10px);
+  z-index: 1; /* Ensure it appears above the background */
+}
+
+/* Section after triangle down with image */
+.after-triangle-image {
+  width: 100%; /* Full width */
+  height: 500px; /* Adjust height based on your design */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px; /* Adjust based on design needs */
+  position: relative;
+  z-index: 1; /* Ensure it appears above the background */
+}
+
+.additional-image {
+  width: 90%; /* Full width */
+  height: 500px; /* Adjust height based on your design */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px; /* Adjust based on design needs */
+  position: relative;
+  z-index: 1;
+  padding-left: 60px;
+}
+.additional-image-container {
+  position: relative; /* Ensures overlay is positioned relative to the container */
+  width: 100%; /* Full width of the container */
+  max-width: 1200px; /* Optional: limit the width of the image */
+  margin: auto; /* Center the container */
+}
+.decorative-image {
+  width: 100%;
+  height: 100%; /* Adjust height as necessary */
+  max-width: 1200px; /* Adjust the width of the image as necessary */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Who Are We Section */
+.who-are-we-section {
+  width: 100%;
+  padding: 50px 20px; /* Add padding for spacing */
+  color: black; /* Text color */
+  text-align: center; /* Center the text */
+  z-index: 1; /* Ensure it appears above the background */
+  background-color: transparent; /* Semi-transparent overlay */
+}
+
+.who-are-we-title {
+  font-size: 36px; /* Adjust size as needed */
+  font-weight: bold; /* Make the title bold */
+  margin-bottom: 20px; /* Spacing below the title */
+  text-decoration: underline;
+}
+
+.who-are-we-description {
+  font-size: 22px; /* Set the font size for the description */
+  color: #000; /* Text color */
+  line-height: 1.5; /* Increase line height for better readability */
+  margin-bottom: -60px; /* Space below each description */
+  text-align: center; /* Align the text to the left */
+  max-width: 900px; /* Set a max width for the description */
+  margin-left: auto; /* Center align the content */
+  margin-right: auto;
+  font-weight: bolder;
+  padding-bottom: 40px;
+}
+
+/* Overlay text styling */
+.overlay {
+  position: absolute; /* Position absolute to overlay on image */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the overlay */
+  text-align: center; /* Center text alignment */
+  z-index: 1; /* Ensure overlay appears above the image */
+}
+
+.overlay-text {
+  color: black; /* Text color */
+  font-size: 4rem; /* Adjust font size for better visibility */
+  margin: 0;
+  font-weight: normal;
+}
+
+.subtext-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0; /* Adds some spacing between "Your Needs" and "Our Excellence" */
+}
+
+.subtext-overlay {
+  font-size: 4rem;
+  font-weight: normal;
+  margin: 0 1rem;
+  width: 400px;
+}
+
+/* Read more button styling */
+.read-more-button {
+  padding: 20px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  display: inline-flex; /* Ensures that the button content (text + arrows) is aligned */
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.right-arrows {
+  display: flex;
+  margin-left: 10px; /* Spacing between "Read more" text and arrows */
+  align-items: center;
+}
+
+.arrow {
+  width: 18px; /* Adjust size of each arrow */
+  height: 18px;
+  stroke-width: 2px;
+}
+
+/* Adjust space between the two arrows */
+.right-arrows .arrow + .arrow {
+  margin-left: -6px; /* Negative margin to make arrows overlap slightly like in the image */
+}
+
+.read-more-button:hover {
+  background-color: transparent; /* Remove transparency on hover */
+}
+
+/* Stats Section */
+
+.stats-section {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items */
+  padding: 40px;
+  background-color: transparent; /* No background color */
+  font-size: small;
+  color: black;
+  font-weight: 300;
+}
+
+/* Stat Item */
+.stat-item {
+  width: calc(50% - 20px); /* Two items per row */
+  text-align: center;
+  margin-bottom: 20px; /* Space below each item */
+  display: flex; /* Use flex to align icon and text */
+  align-items: center; /* Center the items vertically */
+}
+
+/* If you want to adjust spacing between items */
+.stat-item:nth-child(odd) {
+  margin-right: 20px; /* Space between the two items on the same row */
+}
+
+/* Icon Container */
+.icon-container {
+  margin-right: 20px; /* Space between icon and text */
+}
+
+/* Stat Text */
+.stat-text {
+  font-size: 2.2em; /* Size of the text */
+  color: black; /* Color of the text */
+  font-weight: bold;
+}
+
+.text-overlay {
+  position: absolute; /* Position absolute to overlay on image */
+  top: 30%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the text */
+  color: black; /* Text color */
+  font-size: 2rem; /* Adjust font size for visibility */
+  text-align: center; /* Center text alignment */
+  z-index: 1; /* Ensure the text appears above the image */
+  padding: 20px; /* Optional: padding for better spacing */
+  font-family: "Rosewood Regular"; /* Custom font */
+}
+.text-overlay1 {
+  position: absolute; /* Position absolute to overlay on image */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the text */
+  color: black; /* Text color */
+  font-size: 1.5rem; /* Adjust font size for visibility */
+  text-align: center; /* Center text alignment */
+  z-index: 1; /* Ensure the text appears above the image */
+  padding: 20px; /* Optional: padding for better spacing */
+  font-family: "open sans, sans-serif"; /* Custom font */
+  font-weight: bold;
+}
+.additional-image1 {
+  width: 90%; /* Full width */
+  height: 400px; /* Adjust height based on your design */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px; /* Adjust based on design needs */
+  position: relative;
+  z-index: 1;
+  padding-left: 60px;
+}
+.additional-image-container1 {
+  position: relative; /* Ensures overlay is positioned relative to the container */
+  width: 100%; /* Full width of the container */
+  max-width: 1200px; /* Optional: limit the width of the image */
+  margin: auto; /* Center the container */
+}
+.split-container {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Center the lines vertically */
+  justify-content: center; /* Center the lines horizontally */
+  width: 100%; /* Make it full width */
+  margin: 20px 0; /* Optional: Add margin for spacing */
+}
+
+.line {
+  height: 0.8px; /* Thickness of the lines */
+  background-color: black; /* Line color */
+  width: 40%; /* Set the width of each line */
+}
+
+.left-line {
+  margin-right: 5px; /* Small space between the left line and text */
+}
+
+.right-line {
+  margin-left: 5px; /* Small space between the text and right line */
+}
+
+.split-text {
+  margin: 0; /* No extra margin for the text */
+  font-size: 1.5rem; /* Text size */
+  color: #000; /* Text color */
+}
+.header-section {
+  text-align: center;
+}
+.header-section h1 {
+  padding: 40px;
+}
+.work-process-container {
+  padding: 40px; /* Add padding around the steps section */
+  background-color: transparent; /* Light background color */
+}
+.custom-hr {
+  border: none;
+  height: 0.8px;
+  background-color: black;
+  margin: 10px auto;
+  width: 900px;
+  border-radius: 5px;
+  margin-left: -150px;
+}
+
+.testimonals-container {
+  text-align: center; /* Center align content */
+  background-color: transparent; /* Background color for the container */
+  padding: 10px; /* Add padding around the content */
+  border-radius: 8px; /* Optional: rounded corners */
+  max-width: 600px; /* Optional: maximum width for the container */
+  margin: 0 auto; /* Center the container in the page */
+}
+
+.testimonals-container img {
+  width: 150px; /* Set a specific width for the image */
+  height: 150px; /* Set the same height to make it circular */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area */
+  border: 2px solid transparent; /* Optional: border around the image */
+  margin-top: 0px; /* Increased space above the image */
+  margin-bottom: 10px; /* Add space below the image if needed */
+  padding: 50px;
+}
+
+.testimonals-container h3 {
+  background-color: white; /* Background color for the heading */
+  color: black; /* Text color */
+  padding: 10px 20px; /* Add padding */
+  display: inline-block; /* Makes the background fit the text */
+  border-radius: 5px; /* Optional: rounded corners */
+  margin: 0 auto 20px; /* Centers the h3 within the container */
+  font-size: 25px; /* Font size for the heading */
+  position: relative; /* Enables positioning adjustment */
+}
+
+.testimonial-content {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.Larrow-container {
+  display: flex; /* Use flexbox to align image and left arrow */
+  align-items: center; /* Center vertically */
+  margin-right: 50px; /* Adjusts the spacing between arrows and images */
+}
+.Rarrow-container {
+  display: flex; /* Use flexbox to align image and left arrow */
+  align-items: center; /* Center vertically */
+  margin-left: 50px; /* Adjusts the spacing between arrows and images */
+}
+.Larrow-container img {
+  width: 150px; /* Set a specific width for the image */
+  height: 150px; /* Set the same height to make it circular */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area */
+  border: 2px solid transparent; /* Optional: border around the image */
+  margin: 0 40px; /* Space between the arrows and the image */
+}
+
+.Larrow-container svg {
+  display: inline-block; /* Ensure it sits next to the image */
+  padding-left: 30px;
+}
+.testimonals-p {
+  font-size: 22px;
+  color: black;
+  padding: 0px;
+  width: 650px;
+  font-family: open sans, sans-serif;
+  overflow-wrap: break-word;
+}
+.hr1 {
+  border: none;
+  height: 0.8px;
+  background-color: black;
+  margin: 10px auto;
+  width: 900px;
+  border-radius: 5px;
+  margin-left: -50px;
+}
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adds space above dots */
+}
+
+.dot {
+  width: 12px; /* Size of dots */
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 0 5px;
+  opacity: 0.5; /* Lighter opacity for inactive dots */
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: black;
+  opacity: 1; /* Fully visible active dot */
+  width: 14px;
+  height: 14px; /* Slightly larger active dot */
+}
+/*nav bar*/
+
+.navbar {
+  position: fixed; /* Fix the navbar to the top */
+  display: flex;
+  top: 10px; /* Keep it at the top */
+  left: 10; /* Align to the left */
+  right: 10px; /* Align to the right */
+  z-index: 10; /* Ensure it's above other content */
+  background-color: #000;
+  color: black; /* Change text color to black for visibility */
+  padding: 20px; /* Adjust padding as necessary */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 30px; /* Space between each link */
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.nav-links li a:hover {
+  background-color: #444; /* Hover effect */
+}
+
+.navbar ul {
+  padding: 0;
+  margin: 0;
+}
+.navbar-links a {
+  text-decoration: none;
+  color: black; /* Color of the links */
+  font-weight: bold;
+}
+.logo {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the start of the flex container */
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column; /* Stack the text vertically */
+  margin-right: 700px; /* Space between logo and text */
+  line-height: 2dvw;
+}
+
+.the-text {
+  position: relative;
+  top: 5px; /* Adjust this value to align "The" with "Entrepreneurship" */
+  color: 292929;
+  padding: 10px;
+  font-size: 28px;
+  margin-right: 280px;
+  font-family: "Trend Sans W00 Four";
+}
+.Entre-text {
+  font-size: 28px;
+  padding-bottom: 2px;
+  font-family: "Trend Sans W00 Four";
+}
+.network-text {
+  font-size: 28px;
+  margin-right: 130px;
+  font-family: "Trend Sans W00 Four";
+}
