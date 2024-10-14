@@ -112,6 +112,7 @@ body {
   font-weight: bold; /* Make the title bold */
   margin-bottom: 20px; /* Spacing below the title */
   text-decoration: underline;
+  color: black;
 }
 .description-text {
   font-family: "Overlock";
@@ -309,6 +310,7 @@ body {
 }
 .header-section h1 {
   padding: 40px;
+  color: black;
 }
 .work-process-container {
   padding: 40px; /* Add padding around the steps section */
