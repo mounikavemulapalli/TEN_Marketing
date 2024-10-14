@@ -1,7 +1,7 @@
 import React from "react";
 import LOGOSVG from "./files/LOGOSVG"; // Adjust the path as necessary
 import { useMediaQuery } from "react-responsive";
-
+import "../index.css";
 const Navbar = () => {
   return (
     <div className='home-container'>
