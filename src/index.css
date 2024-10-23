@@ -17,7 +17,7 @@ body {
   background-position: center top; /* Center the image */
   background-attachment: fixed; /* Fixed background */
   position: absolute; /* Fixed positioning */
-  top: 4%; /* Start from the top */
+  top: 55%; /* Start from the top */
   left: 0; /* Start from the left */
   width: 100%; /* Full width */
   min-height: 850vh; /* Minimum height of the viewport */
@@ -504,8 +504,8 @@ body {
 }
 
 /*Responsiveness*/
-/* Mobile (smaller than 600px) */
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     padding: 10px;
@@ -534,20 +534,39 @@ body {
     padding: 20px 5px;
     margin: 0 2vw; /* Smaller margin on smaller screens */
     max-width: 95%; /* Increase width */
-    clip-path: none; /* Remove the complex clipping on small screens */
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 70%,
+      85% 70%,
+      50% 100%,
+      15% 70%,
+      0 70%
+    );
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Adjust this height as necessary */
+    max-width: 90%; /* Increase width based on your layout */
+    transform: translateY(10px);
+    z-index: 1; /* Ensure it appears above the background */
   }
 
   .description-text {
-    font-size: 16px;
+    font-size: 20px;
+    padding: 30px;
   }
 
   .who-are-we-title {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .who-are-we-description {
     font-size: 18px;
+    width: 400px;
+    align-items: center;
+    margin: 0px auto;
   }
 
   .read-more-button {
@@ -557,7 +576,7 @@ body {
 
   .overlay-text,
   .subtext-overlay {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .testimonals-container img {
@@ -572,129 +591,68 @@ body {
     padding-top: 100px;
   }
   .fixed-background {
-    background-size: contain; /* Contain the image so it fits well */
-    background-position: center center; /* Center the image */
-    min-height: 200vh; /* Further reduce height */
+    background-size: contain;
+    background-position: center;
+    min-height: 800vh;
+    min-width: 200dvw;
   }
-}
-
-/* Tablet (between 600px and 1024px) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .navbar {
-    flex-direction: row;
-    padding: 25px;
+  .testimonals-container {
+    margin-left: 0px;
   }
-
-  .nav-links {
-    flex-direction: row;
-    gap: 20px;
+  .testimonals-p {
+    width: 375px;
+    padding-left: 0px;
+    line-height: 1.3;
   }
-
-  .logo-text {
-    margin-right: 50px; /* Reduce margin for tablet screens */
+  .additional-image1 {
+    width: 400px;
+    padding: 10px;
   }
-
-  .the-text,
-  .Entre-text,
-  .network-text {
-    font-size: 24px;
+  .stats-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 auto;
+    background-color: transparent;
+    font-size: small;
+    color: black;
+    font-weight: 100;
+    margin: 10px;
   }
-
-  .home-container {
-    padding: 30px 8px;
-    margin: 0 4vw;
-    max-width: 90%;
+  .stat-text {
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
   }
-
-  .description-text {
-    font-size: 18px;
+  .stat-item {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px; /* Space below each item */
+    display: flex; /* Use flex to align icon and text */
+    align-items: center; /* Center the items vertically */
+    margin: 25px;
   }
-
-  .who-are-we-title {
-    font-size: 32px;
+  .decorative-image {
+    padding: 40px;
   }
-
-  .who-are-we-description {
-    font-size: 20px;
+  .text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 1;
+    padding: 0px;
+    font-family: "Rosewood Regular";
+    width: 350px;
   }
-
-  .read-more-button {
-    font-size: 17px;
-  }
-
-  .overlay-text,
-  .subtext-overlay {
-    font-size: 3.5rem;
-  }
-
-  .testimonals-container img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .split-text {
-    font-size: 1.3rem;
-  }
-  .fixed-background {
-    background-size: cover;
-    background-position: center top;
-    min-height: 400vh; /* Adjust height for smaller devices */
-  }
-}
-
-/* Large screens (1025px and above) */
-@media (min-width: 1025px) {
-  .navbar {
-    padding: 20px 50px;
-  }
-
-  .nav-links {
-    gap: 30px;
-  }
-
-  .logo-text {
-    margin-right: 150px;
-  }
-
-  .the-text,
-  .Entre-text,
-  .network-text {
-    font-size: 28px;
-  }
-
-  .home-container {
-    padding: 40px 10px;
-    margin: 0 3vw;
-    max-width: 90%;
-  }
-
-  .description-text {
-    font-size: 22px;
-  }
-
-  .who-are-we-title {
-    font-size: 36px;
-  }
-
-  .who-are-we-description {
-    font-size: 22px;
-  }
-
-  .read-more-button {
-    font-size: 18px;
-  }
-
-  .overlay-text,
-  .subtext-overlay {
-    font-size: 4rem;
-  }
-
-  .testimonals-container img {
-    width: 150px;
-    height: 150px;
-  }
-
-  .split-text {
-    font-size: 1.5rem;
+  .additional-image {
+    width: 380px;
+    padding: 0px;
+    margin: -5px;
   }
 }

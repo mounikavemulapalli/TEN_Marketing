@@ -59,3 +59,34 @@
   width: 400px; /* Ensure the SVG spans full width */
   padding-bottom: 20px; /* Optional: Padding for extra spacing */
 }
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .step-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+    padding: 0px; /* Reduce padding */
+    margin-left: 0; /* Remove the margin-left for better centering */
+  }
+
+  .step-image {
+    width: 100%; /* Make the image take full width */
+    height: auto; /* Adjust the height automatically */
+    margin-right: 0; /* Remove margin to align items vertically */
+  }
+
+  .step-description {
+    max-width: 100%; /* Allow the description to take full width */
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .step-SVG {
+    margin-top: 0px;
+    margin-left: 100%;
+    margin-bottom: 0px; /* Add bottom margin for spacing */
+    width: 100%; /* Ensure SVG takes full width */
+  }
+  .additional-image {
+    padding: 10px;
+  }
+}

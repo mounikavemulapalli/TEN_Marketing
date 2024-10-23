@@ -2,6 +2,7 @@ import React from "react";
 import STEPSVG from "./files/STEPSVG";
 import RARROWSVG from "./files/RARROWSVG";
 import LARROWSVG from "./files/LARROWSVG";
+import { useMediaQuery } from "react-responsive";
 const Home = () => {
   return (
     <section>
@@ -276,8 +277,10 @@ const Home = () => {
           <p className='step-description'>
             Briefly describing the steps <br /> and its purpose
           </p>
+          <div></div>
         </div>
       </div>
+
       {/*close step*/}
       <div className='testimonals-container'>
         <hr className='custom-hr' />
@@ -291,11 +294,9 @@ const Home = () => {
           <RARROWSVG />
         </div>
         <p className='testimonals-p'>
-          What clients have to say after they used your
-          <br /> services.{" "}
+          What clients have to say after they used your services.{" "}
         </p>
         <p className='testimonals-p'>
-          {" "}
           How happy they are and why they want to recommend it to others.
         </p>
         <p className='testimonals-p'>
