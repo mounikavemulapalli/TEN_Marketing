@@ -627,7 +627,7 @@ body {
     font-weight: bold;
   }
   .stat-item {
-    width: 50%;
+    width: 100%;
     text-align: center;
     margin-bottom: 10px; /* Space below each item */
     display: flex; /* Use flex to align icon and text */

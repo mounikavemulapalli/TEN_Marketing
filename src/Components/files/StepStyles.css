@@ -89,4 +89,7 @@
   .additional-image {
     padding: 10px;
   }
+  .step-description {
+    font-size: 24px;
+  }
 }
