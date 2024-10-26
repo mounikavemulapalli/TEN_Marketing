@@ -431,31 +431,23 @@ body {
 /*nav bar*/
 
 .navbar {
-  position: fixed; /* Fix the navbar to the top */
   display: flex;
-  top: 10px; /* Keep it at the top */
-  left: 10; /* Align to the left */
-  right: 10px; /* Align to the right */
-  z-index: 10; /* Ensure it's above other content */
-  background-color: #000;
-  color: black; /* Change text color to black for visibility */
-  padding: 10px; /* Adjust padding as necessary */
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end; /* Aligns navbar to the right */
+  position: absolute; /* Allows you to control top and right positioning */
+  top: 10%; /* Moves the navbar higher up */
+  right: 5%;
 }
 
 .nav-links {
-  list-style-type: none;
+  list-style: none;
   display: flex;
-  gap: 10px; /* Space between each link */
+  gap: 20px;
 }
 
 .nav-links li a {
-  color: white;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 5px 10px;
+  color: white;
+  font-size: 16px;
 }
 
 .nav-links li a:hover {
@@ -463,8 +455,9 @@ body {
 }
 
 .navbar ul {
-  padding: 0;
+  padding: 10px;
   margin: 0;
+  background-color: #444;
 }
 .navbar-links a {
   text-decoration: none;
@@ -480,7 +473,7 @@ body {
   display: flex;
   flex-direction: column; /* Stack the text vertically */
   margin: auto;
-  line-height: 2dvw;
+  line-height: 3dvw;
 }
 
 .the-text {
@@ -502,6 +495,14 @@ body {
   margin-right: 130px;
   font-family: "Trend Sans W00 Four";
 }
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 
 /*Responsiveness*/
 
@@ -515,19 +516,28 @@ body {
   }
 
   .nav-links {
+    display: none;
     flex-direction: column;
-    gap: 10px; /* Reduce gap for smaller screens */
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: transparent;
+    width: 160px;
+    padding: 20px;
+    border: 1px solid #ccc;
   }
 
   .logo-text {
-    margin-right: 0; /* Remove margin on smaller screens */
+    margin-right: -50px; /* Remove margin on smaller screens */
   }
 
   .the-text,
   .Entre-text,
   .network-text {
     font-size: 18px; /* Adjust text size for small screens */
-    margin-right: 0; /* Remove excessive margins */
+    margin: 0px auto; /* Remove excessive margins */
+    padding: 10px;
   }
 
   .home-container {
@@ -654,5 +664,32 @@ body {
     width: 380px;
     padding: 0px;
     margin: -5px;
+  }
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: yellow;
+    color: #000;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .navbar ul {
+    padding: 10px;
+    margin: 0;
+    background-color: transparent;
+  }
+  .nav-links li a {
+    color: #000;
+  }
+
+  .nav-links li a:hover {
+    background-color: transparent; /* Hover effect */
   }
 }

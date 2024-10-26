@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import LOGOSVG from "./files/LOGOSVG"; // Adjust the path as necessary
-import { useMediaQuery } from "react-responsive";
 import "../index.css";
+
 const Navbar = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <div className='home-container'>
       <div className='logo'>
@@ -12,10 +18,16 @@ const Navbar = () => {
           <span className='Entre-text'>Entrepreneurship</span>
           <span className='network-text'>Network</span>
         </div>
-        {/* Added text next to the logo */}
       </div>
-      <nav className='navbar'>
-        <ul className='nav-links'>
+
+      {/* Hamburger Menu for Mobile */}
+      <button className='hamburger' onClick={toggleMenu}>
+        ☰
+      </button>
+
+      {/* Show/Hide nav-links based on mobile menu state */}
+      <nav className={`navbar ${isMobileMenuOpen ? "active" : ""}`}>
+        <ul className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
           <li>
             <a href='#'>Home</a>
           </li>
