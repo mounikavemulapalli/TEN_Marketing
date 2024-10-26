@@ -51,13 +51,13 @@
 
 .step-SVG {
   margin-top: 50px; /* Optional: Adjust vertical position */
-  margin-left: -450px; /* Move the SVG further to the left */
+  margin-left: -500px; /* Move the SVG further to the left */
   margin-bottom: -270px; /* Move the SVG downward */
   display: flex; /* Maintain flexbox layout */
   justify-content: flex-start; /* Align SVG to the left */
   align-items: center; /* Center the SVG vertically */
   width: 400px; /* Ensure the SVG spans full width */
-  padding-bottom: 20px; /* Optional: Padding for extra spacing */
+  padding-bottom: 8px; /* Optional: Padding for extra spacing */
 }
 
 /* Media query for responsiveness */
@@ -82,7 +82,7 @@
 
   .step-SVG {
     margin-top: 0px;
-    margin-left: 100%;
+    margin-left: 90%;
     margin-bottom: 0px; /* Add bottom margin for spacing */
     width: 100%; /* Ensure SVG takes full width */
   }

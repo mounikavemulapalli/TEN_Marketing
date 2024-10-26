@@ -231,7 +231,7 @@ body {
 
 /* Stat Text */
 .stat-text {
-  font-size: 2.2em; /* Size of the text */
+  font-size: 2em; /* Size of the text */
   color: black; /* Color of the text */
   font-weight: bold;
 }
@@ -598,7 +598,7 @@ body {
     font-size: 1.2rem;
   }
   .description-text {
-    padding-top: 100px;
+    padding-top: 20px;
   }
   .fixed-background {
     background-size: contain;
@@ -632,7 +632,7 @@ body {
     margin: 10px;
   }
   .stat-text {
-    font-size: 1.5em;
+    font-size: 2.1em;
     color: black;
     font-weight: bold;
   }
@@ -660,6 +660,7 @@ body {
     font-family: "Rosewood Regular";
     width: 350px;
   }
+
   .additional-image {
     width: 380px;
     padding: 0px;
