@@ -610,7 +610,7 @@ body {
     min-height: 850vh;
     min-width: 200dvw;
     width: 80%;
-    background-size: cover;
+    background-size: fit;
   }
   .testimonals-container {
     margin-left: 0px;
