@@ -609,6 +609,7 @@ body {
     background-repeat: no-repeat;
     min-height: 850vh;
     min-width: 200dvw;
+    width: 80%;
     background-size: cover;
   }
   .testimonals-container {
