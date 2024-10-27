@@ -2,40 +2,38 @@
 @import url(https://db.onlinewebfonts.com/c/33ca94f43a53fc634323a6fe191ffd64?family=Trend+Sans+W00+Four);
 @import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 body {
-  margin: 0; /* Remove default body margin */
+  margin: 0;
   background: none;
 }
 
 /* Other Sections */
 .others {
-  padding-top: 30px; /* This can remain or be adjusted as needed */
-}
-/* Fixed background for the entire page */
-.fixed-background {
-  background-image: url("https://static.wixstatic.com/media/c3e3003d46a34414812aa2c189570a2c.jpg/v1/fill/w_1800,h_1296,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c3e3003d46a34414812aa2c189570a2c.jpg"); /* Your fixed background image */
-  background-size: cover; /* Cover the entire viewport */
-  background-position: center top; /* Center the image */
-  background-attachment: fixed; /* Fixed background */
-  position: absolute; /* Fixed positioning */
-  top: 55%; /* Start from the top */
-  left: 0; /* Start from the left */
-  width: 100%; /* Full width */
-  min-height: 850vh; /* Minimum height of the viewport */
-  z-index: -1; /* Ensure it is behind other content */
-  overflow-x: hidden; /* Prevent horizontal overflow */
-  /* overflow-y: scroll; Allow vertical scrolling if necessary */
+  padding-top: 30px;
 }
 
-/* Adjust overlay as necessary */
+.fixed-background {
+  background-image: url("https://static.wixstatic.com/media/c3e3003d46a34414812aa2c189570a2c.jpg/v1/fill/w_1800,h_1296,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c3e3003d46a34414812aa2c189570a2c.jpg"); /* Your fixed background image */
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 100%;
+  min-height: 850vh;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
 .fixed-background::before {
   content: "";
-  position: absolute; /* Position absolute to cover the entire background */
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.43); /* Light overlay */
-  z-index: -1; /* Place it below the content */
+  background-color: rgba(255, 255, 255, 0.43);
+  z-index: -1;
 }
 
 /* Home section container adjustments */
@@ -518,18 +516,21 @@ body {
   }
 
   .nav-links {
-    display: none;
+    display: none; /* Hidden by default, shown when toggled */
     flex-direction: column;
     gap: 10px;
     position: absolute;
     top: 60px;
     right: 0;
-    background: transparent;
+    background: #fff; /* Adjust background as needed */
     width: 160px;
     padding: 20px;
     border: 1px solid #ccc;
+    z-index: 2;
   }
-
+  .nav-links.show {
+    display: flex; /* Display as flex when toggled */
+  }
   .logo-text {
     margin-right: -100px; /* Remove margin on smaller screens */
   }
@@ -688,7 +689,7 @@ body {
   .navbar ul {
     padding: 10px;
     margin: 0;
-    background-color: transparent;
+    background-color: yellow;
   }
   .nav-links li a {
     color: #000;
@@ -696,5 +697,20 @@ body {
 
   .nav-links li a:hover {
     background-color: transparent; /* Hover effect */
+  }
+  /* Close Button */
+  .close-btn {
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: black;
+  }
+  .navbar.active,
+  .nav-links.active {
+    display: flex;
   }
 }
