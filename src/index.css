@@ -221,18 +221,18 @@ body {
 
 /* If you want to adjust spacing between items */
 .stat-item:nth-child(odd) {
-  margin-right: 20px; /* Space between the two items on the same row */
+  margin-right: 0px; /* Space between the two items on the same row */
 }
 
 /* Icon Container */
 .icon-container {
-  margin-right: 26px;
+  margin-right: 0px;
   padding: 10px;
 }
 
 /* Stat Text */
 .stat-text {
-  font-size: 2em; /* Size of the text */
+  font-size: 2.3em; /* Size of the text */
   color: black; /* Color of the text */
   font-weight: bold;
 }
@@ -535,6 +535,9 @@ body {
   .logo-text {
     margin-right: -100px; /* Remove margin on smaller screens */
   }
+  .icon-container {
+    align-items: flex-start;
+  }
 
   .the-text,
   .Entre-text,
@@ -636,7 +639,7 @@ body {
     font-size: small;
     color: black;
     font-weight: 100;
-    margin: 10px;
+    margin: 0px;
   }
   .stat-text {
     font-size: 21px;
@@ -649,7 +652,7 @@ body {
     margin-bottom: 10px; /* Space below each item */
     display: flex; /* Use flex to align icon and text */
     align-items: center; /* Center the items vertically */
-    margin: 25px;
+    margin-left: 0 auto;
   }
   .decorative-image {
     padding: 40px;

@@ -163,7 +163,7 @@ const Home = () => {
                   ></path>
                 </svg>
               </div>
-              <p className='stat-text'>500+ Colleges</p>
+              <p className='stat-text'>500+ Colleges Connected</p>
             </div>
 
             <div className='stat-item'>
