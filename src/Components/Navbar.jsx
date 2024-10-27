@@ -25,13 +25,13 @@ const Navbar = () => {
         ☰
       </button>
       <nav className={`navbar ${isMobileMenuOpen ? "active" : ""}`}>
-        {/* Close button inside the overlay menu */}
-        {isMobileMenuOpen && (
-          <button className='close-btn' onClick={toggleMenu}>
-            ×
-          </button>
-        )}
         <ul className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
+          {/* Close button inside the overlay menu */}
+          {isMobileMenuOpen && (
+            <button className='close-btn' onClick={toggleMenu}>
+              ×
+            </button>
+          )}
           <li>
             <a href='#'>Home</a>
           </li>

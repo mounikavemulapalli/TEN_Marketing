@@ -702,12 +702,23 @@ body {
   .close-btn {
     font-size: 24px;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 0px;
+    right: 0px;
     cursor: pointer;
     background: none;
     border: none;
     color: black;
+
+    transition: color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  .close-btn:hover {
+    color: black; /* Change color on hover for visibility */
+    transform: scale(1.1); /* Slightly increase size on hover */
+  }
+
+  .close-btn:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5); /* Add a custom focus ring */
   }
   .navbar.active,
   .nav-links.active {
