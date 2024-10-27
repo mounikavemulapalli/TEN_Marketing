@@ -69,7 +69,7 @@
   }
 
   .step-image {
-    width: 100%; /* Make the image take full width */
+    width: 300px; /* Make the image take full width */
     height: auto; /* Adjust the height automatically */
     margin-right: 0; /* Remove margin to align items vertically */
   }
