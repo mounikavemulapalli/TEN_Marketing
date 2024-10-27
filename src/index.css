@@ -387,7 +387,7 @@ body {
   padding-left: 30px;
 }
 .logo svg {
-  margin-left: -500px;
+  margin-left: -40dvw;
 }
 .testimonals-p {
   font-size: 22px;
@@ -447,7 +447,8 @@ body {
 .nav-links li a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
+  padding: 15px;
 }
 
 .nav-links li a:hover {
@@ -472,13 +473,12 @@ body {
 .logo-text {
   display: flex;
   flex-direction: column; /* Stack the text vertically */
-  margin: auto;
-  line-height: 3dvw;
+  line-height: 2dvw;
 }
 
 .the-text {
   position: relative;
-  top: 5px; /* Adjust this value to align "The" with "Entrepreneurship" */
+  top: 0px;
   color: 292929;
   padding: 10px;
   font-size: 28px;
@@ -487,7 +487,7 @@ body {
 }
 .Entre-text {
   font-size: 28px;
-  padding-bottom: 2px;
+  padding-bottom: 10px;
   font-family: "Trend Sans W00 Four";
 }
 .network-text {
@@ -601,10 +601,11 @@ body {
     padding-top: 20px;
   }
   .fixed-background {
-    background-size: contain;
     background-position: center;
-    min-height: 800vh;
+    background-repeat: no-repeat;
+    min-height: 850vh;
     min-width: 200dvw;
+    background-size: cover;
   }
   .testimonals-container {
     margin-left: 0px;
