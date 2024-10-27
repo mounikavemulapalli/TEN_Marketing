@@ -4,6 +4,7 @@
 body {
   margin: 0;
   background: none;
+  overflow-x: hidden;
 }
 
 /* Other Sections */
@@ -609,8 +610,8 @@ body {
     background-repeat: no-repeat;
     min-height: 850vh;
     min-width: 200dvw;
-    width: 80%;
-    background-size: fit;
+    width: auto;
+    background-size: cover;
   }
   .testimonals-container {
     margin-left: 0px;
