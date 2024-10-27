@@ -11,6 +11,10 @@ const Navbar = () => {
 
   return (
     <div className='home-container'>
+      {/* Hamburger Menu for Mobile */}
+      <button className='hamburger' onClick={toggleMenu}>
+        ☰
+      </button>
       <div className='logo'>
         <LOGOSVG />
         <div className='logo-text'>
@@ -20,10 +24,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Hamburger Menu for Mobile */}
-      <button className='hamburger' onClick={toggleMenu}>
-        ☰
-      </button>
       <nav className={`navbar ${isMobileMenuOpen ? "active" : ""}`}>
         <ul className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
           {/* Close button inside the overlay menu */}
