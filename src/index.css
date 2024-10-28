@@ -750,7 +750,7 @@ body {
 @media (max-width: 1024px) {
   .home-container {
     padding: 30px 20px;
-    margin: 0vw 4vw; /* Add margin on left and right */
+    margin: 0vw 3vw; /* Add margin on left and right */
     position: relative;
     clip-path: polygon(
       0 0,
@@ -789,7 +789,7 @@ body {
   }
   .logo svg {
     margin-top: -15px;
-    margin-left: -40dvw;
+    margin-left: -35dvw;
   }
   .stat-text {
     font-size: 16px;
