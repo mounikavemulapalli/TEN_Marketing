@@ -574,17 +574,20 @@ body {
     font-size: 20px;
     padding: 30px;
   }
-
+  .who-are-we-section {
+    margin-right: 0px;
+  }
   .who-are-we-title {
-    font-size: 25px;
+    font-size: 20px;
+    margin-right: 60px;
+    text-align: center;
   }
 
   .who-are-we-description {
     font-size: 18px;
-    width: 350px;
+    width: 320px;
     align-items: center;
-
-    margin-left: 10px;
+    margin-left: 0;
   }
 
   .read-more-button {
@@ -734,8 +737,69 @@ body {
   .nav-links.active {
     display: flex;
   }
-  .text-overlay1
-  {
-    width:90%;
+  .text-overlay1 {
+    width: 90%;
   }
+}
+@media (max-width: 1200px) {
+  .stat-text {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .home-container {
+    padding: 30px 20px;
+    margin: 0vw 4vw; /* Add margin on left and right */
+    position: relative;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 70%,
+      85% 70%,
+      50% 100%,
+      15% 70%,
+      0 70%
+    );
+    display: flex;
+  }
+  .navbar {
+    display: flex;
+    justify-content: flex-end; /* Aligns navbar to the right */
+    position: absolute; /* Allows you to control top and right positioning */
+    top: 0%; /* Moves the navbar higher up */
+    right: 0%;
+  }
+  .navbar ul {
+    padding: 5px;
+    margin: 0;
+    background-color: black;
+  }
+  .nav-links {
+    gap: 0px;
+  }
+
+  .nav-links li a {
+    color: white;
+    font-size: small;
+  }
+
+  .nav-links li a:hover {
+    background-color: transparent; /* Hover effect */
+  }
+  .logo svg {
+    margin-top: -15px;
+    margin-left: -40dvw;
+  }
+  .stat-text {
+    font-size: 16px;
+  }
+  .the-text
+  {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 850px) {
+}
+@media (max-width: 480px) {
 }
