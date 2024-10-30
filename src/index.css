@@ -1,19 +1,23 @@
 @import url(https://db.onlinewebfonts.com/c/69c14b7245e9a736fa48c93a9209d0bf?family=Rosewood+Regular);
 @import url(https://db.onlinewebfonts.com/c/33ca94f43a53fc634323a6fe191ffd64?family=Trend+Sans+W00+Four);
 @import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: none;
   overflow-x: hidden;
 }
 
-/* Other Sections */
 .others {
   padding-top: 30px;
 }
 
 .fixed-background {
-  background-image: url("https://static.wixstatic.com/media/c3e3003d46a34414812aa2c189570a2c.jpg/v1/fill/w_1800,h_1296,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c3e3003d46a34414812aa2c189570a2c.jpg"); /* Your fixed background image */
+  background-image: url("https://static.wixstatic.com/media/c3e3003d46a34414812aa2c189570a2c.jpg/v1/fill/w_1800,h_1296,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c3e3003d46a34414812aa2c189570a2c.jpg");
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
@@ -37,79 +41,71 @@ body {
   z-index: -1;
 }
 
-/* Home section container adjustments */
 .home-container {
-  background-color: rgba(
-    170,
-    231,
-    192,
-    1
-  ); /* Fallback color with transparency */
+  background-color: rgba(170, 231, 192, 1);
   text-align: center;
   padding: 40px 10px;
-  margin: 0vw 3vw; /* Add margin on left and right */
+  margin: 0vw 3vw;
   position: relative;
-  /* clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 70%, 50% 100%, 15% 70%, 0 70%); */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 200px; /* Adjust this height as necessary */
-  max-width: 90%; /* Increase width based on your layout */
+  min-height: 200px;
+  max-width: 90%;
   transform: translateY(10px);
-  z-index: 1; /* Ensure it appears above the background */
+  z-index: 1;
 }
 
-/* Section after triangle down with image */
 .after-triangle-image {
-  width: 100%; /* Full width */
-  height: 500px; /* Adjust height based on your design */
+  width: 100%;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -50px; /* Adjust based on design needs */
+  margin-top: -50px;
   position: relative;
-  z-index: 1; /* Ensure it appears above the background */
+  z-index: 1;
 }
 
 .additional-image {
-  width: 90%; /* Full width */
-  height: 500px; /* Adjust height based on your design */
+  width: 90%;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -10px; /* Adjust based on design needs */
+  margin-top: -10px;
   position: relative;
   z-index: 1;
   padding-left: 60px;
 }
 .additional-image-container {
-  position: relative; /* Ensures overlay is positioned relative to the container */
-  width: 100%; /* Full width of the container */
-  max-width: 1200px; /* Optional: limit the width of the image */
-  margin: auto; /* Center the container */
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 .decorative-image {
   width: 100%;
-  height: 100%; /* Adjust height as necessary */
-  max-width: 1200px; /* Adjust the width of the image as necessary */
-  object-fit: cover; /* Maintain aspect ratio */
+  height: 100%;
+  max-width: 1200px;
+  object-fit: cover;
 }
 
-/* Who Are We Section */
 .who-are-we-section {
   width: 100%;
-  padding: 50px 20px; /* Add padding for spacing */
-  color: black; /* Text color */
-  text-align: center; /* Center the text */
-  z-index: 1; /* Ensure it appears above the background */
-  background-color: transparent; /* Semi-transparent overlay */
+  padding: 50px 20px;
+  color: black;
+  text-align: center;
+  z-index: 1;
+  background-color: transparent;
 }
 
 .who-are-we-title {
-  font-size: 36px; /* Adjust size as needed */
-  font-weight: bold; /* Make the title bold */
-  margin-bottom: 20px; /* Spacing below the title */
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
   text-decoration: underline;
   color: black;
 }
@@ -118,31 +114,30 @@ body {
   font-weight: bold;
 }
 .who-are-we-description {
-  font-size: 22px; /* Set the font size for the description */
-  color: #000; /* Text color */
-  line-height: 1.5; /* Increase line height for better readability */
-  margin-bottom: -60px; /* Space below each description */
-  text-align: center; /* Align the text to the left */
-  max-width: 900px; /* Set a max width for the description */
-  margin-left: auto; /* Center align the content */
+  font-size: 22px;
+  color: #000;
+  line-height: 1.5;
+  margin-bottom: -60px;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
   margin-right: auto;
   font-weight: bolder;
   padding-bottom: 40px;
 }
 
-/* Overlay text styling */
 .overlay {
-  position: absolute; /* Position absolute to overlay on image */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center the overlay */
-  text-align: center; /* Center text alignment */
-  z-index: 1; /* Ensure overlay appears above the image */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
 }
 
 .overlay-text {
-  color: black; /* Text color */
-  font-size: 4rem; /* Adjust font size for better visibility */
+  color: black;
+  font-size: 4rem;
   margin: 0;
   font-weight: normal;
 }
@@ -151,7 +146,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0; /* Adds some spacing between "Your Needs" and "Our Excellence" */
+  margin-top: 0;
 }
 
 .subtext-overlay {
@@ -161,7 +156,6 @@ body {
   width: 400px;
 }
 
-/* Read more button styling */
 .read-more-button {
   padding: 20px 20px;
   font-size: 18px;
@@ -170,141 +164,134 @@ body {
   color: black;
   border: 1px solid black;
   cursor: pointer;
-  display: inline-flex; /* Ensures that the button content (text + arrows) is aligned */
+  display: inline-flex;
   align-items: center;
   transition: background-color 0.3s ease;
 }
 
 .right-arrows {
   display: flex;
-  margin-left: 10px; /* Spacing between "Read more" text and arrows */
+  margin-left: 10px;
   align-items: center;
 }
 
 .arrow {
-  width: 18px; /* Adjust size of each arrow */
+  width: 18px;
   height: 18px;
   stroke-width: 2px;
 }
 
-/* Adjust space between the two arrows */
 .right-arrows .arrow + .arrow {
-  margin-left: -6px; /* Negative margin to make arrows overlap slightly like in the image */
+  margin-left: -6px;
 }
 
 .read-more-button:hover {
-  background-color: transparent; /* Remove transparency on hover */
+  background-color: transparent;
 }
-
-/* Stats Section */
 
 .stats-section {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  justify-content: center; /* Center items */
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 40px;
-  background-color: transparent; /* No background color */
+  background-color: transparent;
   font-size: small;
   color: black;
   font-weight: 300;
 }
 
-/* Stat Item */
 .stat-item {
-  width: calc(50% - 20px); /* Two items per row */
+  width: calc(50% - 20px);
   text-align: center;
-  margin-bottom: 25px; /* Space below each item */
-  display: flex; /* Use flex to align icon and text */
-  align-items: center; /* Center the items vertically */
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
   margin-left: 10px auto;
 }
 
-/* If you want to adjust spacing between items */
 .stat-item:nth-child(odd) {
-  margin-right: 0px; /* Space between the two items on the same row */
+  margin-right: 0px;
 }
 
-/* Icon Container */
 .icon-container {
   margin-right: 0px;
   padding: 10px;
 }
 
-/* Stat Text */
 .stat-text {
-  font-size: 2.3em; /* Size of the text */
-  color: black; /* Color of the text */
+  font-size: 2.3em;
+  color: black;
   font-weight: bold;
 }
 
 .text-overlay {
-  position: absolute; /* Position absolute to overlay on image */
-  top: 30%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center the text */
-  color: black; /* Text color */
-  font-size: 2rem; /* Adjust font size for visibility */
-  text-align: center; /* Center text alignment */
-  z-index: 1; /* Ensure the text appears above the image */
-  padding: 20px; /* Optional: padding for better spacing */
-  font-family: "Rosewood Regular"; /* Custom font */
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 1;
+  padding: 20px;
+  font-family: "Rosewood Regular";
 }
 .text-overlay1 {
-  position: absolute; /* Position absolute to overlay on image */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center the text */
-  color: black; /* Text color */
-  font-size: 1.5rem; /* Adjust font size for visibility */
-  text-align: center; /* Center text alignment */
-  z-index: 1; /* Ensure the text appears above the image */
-  padding: 20px; /* Optional: padding for better spacing */
-  font-family: "overlock, sans-serif"; /* Custom font */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 1;
+  padding: 20px;
+  font-family: "overlock, sans-serif";
   font-weight: bold;
 }
 .additional-image1 {
-  width: 90%; /* Full width */
-  height: 400px; /* Adjust height based on your design */
+  width: 90%;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -30px; /* Adjust based on design needs */
+  margin-top: -30px;
   position: relative;
   z-index: 1;
   padding-left: 60px;
 }
 .additional-image-container1 {
-  position: relative; /* Ensures overlay is positioned relative to the container */
-  width: 100%; /* Full width of the container */
-  max-width: 1200px; /* Optional: limit the width of the image */
-  margin: auto; /* Center the container */
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 .split-container {
-  display: flex; /* Use flexbox for horizontal alignment */
-  align-items: center; /* Center the lines vertically */
-  justify-content: center; /* Center the lines horizontally */
-  width: 100%; /* Make it full width */
-  margin: 20px 0; /* Optional: Add margin for spacing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
 }
 
 .line {
-  height: 0.8px; /* Thickness of the lines */
-  background-color: black; /* Line color */
-  width: 40%; /* Set the width of each line */
+  height: 0.8px;
+  background-color: black;
+  width: 40%;
 }
 
 .left-line {
-  margin-right: 5px; /* Small space between the left line and text */
+  margin-right: 5px;
 }
 
 .right-line {
-  margin-left: 5px; /* Small space between the text and right line */
+  margin-left: 5px;
 }
 
 .split-text {
-  margin: 0; /* No extra margin for the text */
-  font-size: 1.5rem; /* Text size */
-  color: #000; /* Text color */
+  margin: 0;
+  font-size: 1.5rem;
+  color: #000;
 }
 .header-section {
   text-align: center;
@@ -314,8 +301,8 @@ body {
   color: black;
 }
 .work-process-container {
-  padding: 40px; /* Add padding around the steps section */
-  background-color: transparent; /* Light background color */
+  padding: 40px;
+  background-color: transparent;
 }
 .custom-hr {
   border: none;
@@ -328,63 +315,63 @@ body {
 }
 
 .testimonals-container {
-  text-align: center; /* Center align content */
-  background-color: transparent; /* Background color for the container */
-  padding: 10px; /* Add padding around the content */
-  border-radius: 8px; /* Optional: rounded corners */
-  max-width: 600px; /* Optional: maximum width for the container */
-  margin: 0 auto; /* Center the container in the page */
+  text-align: center;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .testimonals-container img {
-  width: 150px; /* Set a specific width for the image */
-  height: 150px; /* Set the same height to make it circular */
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures the image covers the area */
-  border: 2px solid transparent; /* Optional: border around the image */
-  margin-top: 0px; /* Increased space above the image */
-  margin-bottom: 10px; /* Add space below the image if needed */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  margin-top: 0px;
+  margin-bottom: 10px;
   padding: 50px;
 }
 
 .testimonals-container h3 {
-  background-color: white; /* Background color for the heading */
-  color: black; /* Text color */
-  padding: 10px 20px; /* Add padding */
-  display: inline-block; /* Makes the background fit the text */
-  border-radius: 5px; /* Optional: rounded corners */
-  margin: 0 auto 20px; /* Centers the h3 within the container */
-  font-size: 25px; /* Font size for the heading */
-  position: relative; /* Enables positioning adjustment */
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 0 auto 20px;
+  font-size: 25px;
+  position: relative;
 }
 
 .testimonial-content {
-  display: flex; /* Use flexbox to align items horizontally */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Larrow-container {
-  display: flex; /* Use flexbox to align image and left arrow */
-  align-items: center; /* Center vertically */
-  margin-right: 50px; /* Adjusts the spacing between arrows and images */
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
 }
 .Rarrow-container {
-  display: flex; /* Use flexbox to align image and left arrow */
-  align-items: center; /* Center vertically */
-  margin-left: 50px; /* Adjusts the spacing between arrows and images */
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
 }
 .Larrow-container img {
-  width: 150px; /* Set a specific width for the image */
-  height: 150px; /* Set the same height to make it circular */
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures the image covers the area */
-  border: 2px solid transparent; /* Optional: border around the image */
-  margin: 0 40px; /* Space between the arrows and the image */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  margin: 0 40px;
 }
 
 .Larrow-container svg {
-  display: inline-block; /* Ensure it sits next to the image */
+  display: inline-block;
   padding-left: 30px;
 }
 .logo svg {
@@ -410,32 +397,31 @@ body {
 .dots-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Adds space above dots */
+  margin-top: 20px;
 }
 
 .dot {
-  width: 12px; /* Size of dots */
+  width: 12px;
   height: 12px;
   background-color: black;
   border-radius: 50%;
   margin: 0 5px;
-  opacity: 0.5; /* Lighter opacity for inactive dots */
+  opacity: 0.5;
   cursor: pointer;
 }
 
 .dot.active {
   background-color: black;
-  opacity: 1; /* Fully visible active dot */
+  opacity: 1;
   width: 14px;
-  height: 14px; /* Slightly larger active dot */
+  height: 14px;
 }
-/*nav bar*/
 
 .navbar {
   display: flex;
-  justify-content: flex-end; /* Aligns navbar to the right */
-  position: absolute; /* Allows you to control top and right positioning */
-  top: 10%; /* Moves the navbar higher up */
+  justify-content: flex-end;
+  position: absolute;
+  top: 10%;
   right: 5%;
 }
 
@@ -453,7 +439,7 @@ body {
 }
 
 .nav-links li a:hover {
-  background-color: #444; /* Hover effect */
+  background-color: #444;
 }
 
 .navbar ul {
@@ -463,7 +449,7 @@ body {
 }
 .navbar-links a {
   text-decoration: none;
-  color: black; /* Color of the links */
+  color: black;
   font-weight: bold;
 }
 .logo {
@@ -473,7 +459,7 @@ body {
 
 .logo-text {
   display: flex;
-  flex-direction: column; /* Stack the text vertically */
+  flex-direction: column;
   line-height: 2dvw;
 }
 
@@ -497,15 +483,13 @@ body {
   font-family: "Trend Sans W00 Four";
 }
 .hamburger {
-  display: none; /* Hidden by default */
+  display: none;
   font-size: 24px;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
 }
-
-/*Responsiveness*/
 
 @media (max-width: 767px) {
   .navbar {
@@ -517,23 +501,23 @@ body {
   }
 
   .nav-links {
-    display: none; /* Hidden by default, shown when toggled */
+    display: none;
     flex-direction: column;
     gap: 10px;
     position: absolute;
     top: 60px;
     right: 0;
-    background: #fff; /* Adjust background as needed */
-    width: 160px;
+    background: #fff;
+    width: 180px;
     padding: 20px;
     border: 1px solid #ccc;
     z-index: 2;
   }
   .nav-links.show {
-    display: flex; /* Display as flex when toggled */
+    display: flex;
   }
   .logo-text {
-    margin-right: -100px; /* Remove margin on smaller screens */
+    margin-right: -100px;
   }
   .icon-container {
     align-items: flex-start;
@@ -542,33 +526,24 @@ body {
   .the-text,
   .Entre-text,
   .network-text {
-    font-size: 18px; /* Adjust text size for small screens */
-    margin: 0px auto; /* Remove excessive margins */
+    font-size: 18px;
+    margin: 0px auto;
     padding: 10px;
   }
 
   .home-container {
     display: flex;
     padding: 20px 5px;
-    margin: 0 2vw; /* Smaller margin on smaller screens */
-    max-width: 95%; /* Increase width */
-    /* clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 70%,
-      85% 70%,
-      50% 100%,
-      15% 70%,
-      0 70%
-    ); */
+    margin: 0 1vw;
+    max-width: 100%;
+
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 300px; /* Adjust this height as necessary */
-    max-width: 90%; /* Increase width based on your layout */
+    min-height: 300px;
     transform: translateY(10px);
-    z-index: 5; /* Ensure it appears above the background */
+    z-index: 5;
   }
 
   .description-text {
@@ -658,9 +633,9 @@ body {
   .stat-item {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px; /* Space below each item */
-    display: flex; /* Use flex to align icon and text */
-    align-items: center; /* Center the items vertically */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
     margin-left: 0 auto;
   }
   .decorative-image {
@@ -698,10 +673,7 @@ body {
     color: #000;
     z-index: 5;
   }
-  .nav-links.active {
-    display: flex;
-    line-height: 1.3;
-  }
+
   .navbar ul {
     padding: 10px;
     margin: 0;
@@ -712,44 +684,52 @@ body {
   }
 
   .nav-links li a:hover {
-    background-color: transparent; /* Hover effect */
+    background-color: transparent;
   }
-  /* Close Button */
+
   .close-btn {
-    font-size: 24px;
+    font-size: 30px;
     position: absolute;
-    top: 10px; /* Adjust top positioning if necessary */
-    right: 15px; /* Increase value to move right */
+    top: 0px;
+    right: 30px;
     cursor: pointer;
     background: none;
     border: none;
     color: black;
-    display: contents;
-    transition: color 0.3s, transform 0.3s; /* Smooth transition */
+    transition: color 0.3s, transform 0.3s;
   }
   .close-btn:hover {
-    color: black; /* Change color on hover for visibility */
-    transform: scale(1.1); /* Slightly increase size on hover */
+    color: black;
+    transform: scale(1.1);
   }
 
   .close-btn:focus {
-    outline: none; /* Remove focus outline */
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5); /* Add a custom focus ring */
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
   }
   .navbar.active,
   .nav-links.active {
     display: flex;
-    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100vw;
     height: 100vh;
     background-color: rgba(255, 200, 36, 1);
-    padding-top: 40px;
+    padding-top: 20px;
+    overflow-y: auto;
   }
 
   .text-overlay1 {
     width: 90%;
   }
 
-  /* Disable body scroll when menu is open */
   .no-scroll {
     overflow: hidden;
   }
@@ -763,24 +743,16 @@ body {
 @media (max-width: 1024px) {
   .home-container {
     padding: 30px 20px;
-    margin: 0vw 3vw; /* Add margin on left and right */
+    margin: 0vw 3vw;
     position: relative;
-    /* clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 70%,
-      85% 70%,
-      50% 100%,
-      15% 70%,
-      0 70%
-    ); */
+
     display: flex;
   }
   .navbar {
     display: flex;
-    justify-content: flex-end; /* Aligns navbar to the right */
-    position: absolute; /* Allows you to control top and right positioning */
-    top: 0%; /* Moves the navbar higher up */
+    justify-content: flex-end;
+    position: absolute;
+    top: 0%;
     right: 0%;
   }
   .navbar ul {
@@ -790,6 +762,7 @@ body {
   }
   .nav-links {
     gap: 0px;
+    position: relative;
   }
 
   .nav-links li a {
@@ -799,7 +772,7 @@ body {
   }
 
   .nav-links li a:hover {
-    background-color: transparent; /* Hover effect */
+    background-color: transparent;
   }
   .logo svg {
     margin-top: -15px;
