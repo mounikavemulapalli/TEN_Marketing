@@ -7,14 +7,31 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
+    if (!isMobileMenuOpen) {
+      document.body.classList.add("no-scroll");
+      document.documentElement.classList.add("no-scroll"); // For html element
+    } else {
+      document.body.classList.remove("no-scroll");
+      document.documentElement.classList.remove("no-scroll"); // For html element
+    }
+  };
+
+  const closeMenu = () => {
+    setMobileMenuOpen(false);
+    document.body.classList.remove("no-scroll");
+    document.documentElement.classList.remove("no-scroll");
   };
 
   return (
     <div className='home-container'>
+      {/* Overlay for mobile menu */}
+      {isMobileMenuOpen && <div className='overlay' onClick={closeMenu} />}
+
       {/* Hamburger Menu for Mobile */}
       <button className='hamburger' onClick={toggleMenu}>
         ☰
       </button>
+
       <div className='logo'>
         <LOGOSVG />
         <div className='logo-text'>
@@ -26,9 +43,8 @@ const Navbar = () => {
 
       <nav className={`navbar ${isMobileMenuOpen ? "active" : ""}`}>
         <ul className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
-          {/* Close button inside the overlay menu */}
           {isMobileMenuOpen && (
-            <button className='close-btn' onClick={toggleMenu}>
+            <button className='close-btn' onClick={closeMenu}>
               ×
             </button>
           )}

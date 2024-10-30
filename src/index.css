@@ -49,7 +49,7 @@ body {
   padding: 40px 10px;
   margin: 0vw 3vw; /* Add margin on left and right */
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 70%, 50% 100%, 15% 70%, 0 70%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 70%, 50% 100%, 15% 70%, 0 70%); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -552,7 +552,7 @@ body {
     padding: 20px 5px;
     margin: 0 2vw; /* Smaller margin on smaller screens */
     max-width: 95%; /* Increase width */
-    clip-path: polygon(
+    /* clip-path: polygon(
       0 0,
       100% 0,
       100% 70%,
@@ -560,7 +560,7 @@ body {
       50% 100%,
       15% 70%,
       0 70%
-    );
+    ); */
     text-align: center;
     flex-direction: column;
     justify-content: center;
@@ -718,13 +718,13 @@ body {
   .close-btn {
     font-size: 24px;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 10px; /* Adjust top positioning if necessary */
+    right: 15px; /* Increase value to move right */
     cursor: pointer;
     background: none;
     border: none;
     color: black;
-
+    display: contents;
     transition: color 0.3s, transform 0.3s; /* Smooth transition */
   }
   .close-btn:hover {
@@ -739,9 +739,19 @@ body {
   .navbar.active,
   .nav-links.active {
     display: flex;
+    width: 90vw;
+    height: 100vh;
+    background-color: rgba(255, 200, 36, 1);
+    padding-top: 40px;
   }
+
   .text-overlay1 {
     width: 90%;
+  }
+
+  /* Disable body scroll when menu is open */
+  .no-scroll {
+    overflow: hidden;
   }
 }
 @media (max-width: 1200px) {
@@ -755,7 +765,7 @@ body {
     padding: 30px 20px;
     margin: 0vw 3vw; /* Add margin on left and right */
     position: relative;
-    clip-path: polygon(
+    /* clip-path: polygon(
       0 0,
       100% 0,
       100% 70%,
@@ -763,7 +773,7 @@ body {
       50% 100%,
       15% 70%,
       0 70%
-    );
+    ); */
     display: flex;
   }
   .navbar {
@@ -783,8 +793,9 @@ body {
   }
 
   .nav-links li a {
-    color: white;
-    font-size: small;
+    color: black;
+    font-size: 30px;
+    line-height: 1.5;
   }
 
   .nav-links li a:hover {
