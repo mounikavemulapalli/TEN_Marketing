@@ -746,7 +746,6 @@ body {
     padding: 30px 20px;
     margin: 0vw 3vw;
     position: relative;
-
     display: flex;
   }
   .navbar {
@@ -759,7 +758,7 @@ body {
   .navbar ul {
     padding: 5px;
     margin: 0;
-    background-color: black;
+    background-color: white;
   }
   .nav-links {
     gap: 0px;
@@ -785,4 +784,215 @@ body {
   .the-text {
     margin-left: 0px;
   }
+}
+@media (max-width: 480px) {
+  .description-text {
+    width: 300px;
+    padding-bottom: 10px;
+  }
+  .home-container {
+    padding: 10px;
+  }
+  .after-triangle-image {
+    width: 300px;
+  }
+  .who-are-we-section {
+    width: 100%;
+    padding: 30px 20px;
+    color: black;
+    text-align: center;
+    z-index: 1;
+    background-color: transparent;
+  }
+
+  .who-are-we-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: black;
+  }
+  .who-are-we-description {
+    font-size: 17px;
+    width: 300px;
+    align-items: center;
+    margin-left: 0;
+  }
+  .additional-image-container {
+    position: relative;
+    width: 280px;
+    height: 180px;
+  }
+  .text-overlay
+  {
+    font-size: 16px;
+  }
+  .stats-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 auto;
+    background-color: transparent;
+    font-size: small;
+    color: black;
+    font-weight: 100;
+    margin: 0px;
+  }
+  .stat-text {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+  }
+  .stat-item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 0 auto;
+  }
+  .text-overlay1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    font-family: "overlock, sans-serif";
+    font-weight: bold;
+  }
+  .additional-image1 {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
+    padding-left: 12px;
+  }
+  .additional-image-container1 {
+    position: relative;
+    width: 100%;
+    max-width: 330px;
+    margin: auto;
+  }
+  .testimonals-container {
+    text-align: center;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .testimonals-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 50px;
+  }
+  
+  .testimonals-container h3 {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0 auto 20px;
+    font-size: 25px;
+    position: relative;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Larrow-container {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+  }
+  .Rarrow-container {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .Larrow-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+    margin: 0;
+  }
+  
+  .Larrow-container svg {
+    display: inline-block;
+    padding-left: 0px;
+  }
+  .logo svg {
+    margin-left: 0dvw;
+  }
+  .testimonals-p {
+    font-size: 16px;
+    color: black;
+    padding: 0px;
+    width: 300px;
+    font-family: open sans, sans-serif;
+    overflow-wrap: break-word;
+  }
+  .logo {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 2dvw;
+  }
+  
+  .the-text {
+    position: relative;
+    top: 0px;
+    color: 292929;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 280px;
+    font-family: "Trend Sans W00 Four";
+  }
+  .Entre-text {
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    font-family: "Trend Sans W00 Four";
+  }
+  .network-text {
+    font-size: 16px;
+    margin-left: 30px;
+    font-family: "Trend Sans W00 Four";
+  }
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+  }
+  
+}
+@media (max-width: 850px) {
 }

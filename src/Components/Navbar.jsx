@@ -70,13 +70,11 @@ const Navbar = () => {
       </nav>
 
       <p className='description-text'>
-        Something about the website and the purpose of
-        <br />
-        its creation.
+        Something about the website and the purpose of its creation.
         <br />
         The founder's ambition to change the world of
-        <br />
         Marketing.
+        
       </p>
 
       <div className='triangle-down' />
