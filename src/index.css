@@ -794,7 +794,7 @@ body {
     padding: 10px;
   }
   .after-triangle-image {
-    width: 300px;
+    width: 340px;
   }
   .who-are-we-section {
     width: 100%;
@@ -823,8 +823,7 @@ body {
     width: 280px;
     height: 180px;
   }
-  .text-overlay
-  {
+  .text-overlay {
     font-size: 16px;
   }
   .stats-section {
@@ -866,17 +865,7 @@ body {
     font-family: "overlock, sans-serif";
     font-weight: bold;
   }
-  .additional-image1 {
-    width: 90%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -30px;
-    position: relative;
-    z-index: 1;
-    padding-left: 12px;
-  }
+
   .additional-image-container1 {
     position: relative;
     width: 100%;
@@ -891,7 +880,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
   }
-  
+
   .testimonals-container img {
     width: 100px;
     height: 100px;
@@ -902,7 +891,7 @@ body {
     margin-bottom: 10px;
     padding: 50px;
   }
-  
+
   .testimonals-container h3 {
     background-color: white;
     color: black;
@@ -913,7 +902,7 @@ body {
     font-size: 25px;
     position: relative;
   }
-  
+
   .testimonial-content {
     display: flex;
     align-items: center;
@@ -937,7 +926,7 @@ body {
     border: 2px solid transparent;
     margin: 0;
   }
-  
+
   .Larrow-container svg {
     display: inline-block;
     padding-left: 0px;
@@ -949,7 +938,7 @@ body {
     font-size: 16px;
     color: black;
     padding: 0px;
-    width: 300px;
+    width: 320px;
     font-family: open sans, sans-serif;
     overflow-wrap: break-word;
   }
@@ -957,13 +946,13 @@ body {
     display: flex;
     align-items: flex-start;
   }
-  
+
   .logo-text {
     display: flex;
     flex-direction: column;
     line-height: 2dvw;
   }
-  
+
   .the-text {
     position: relative;
     top: 0px;
@@ -992,7 +981,16 @@ body {
     color: black;
     cursor: pointer;
   }
-  
+  .additional-image,
+  .additional-image1 {
+    width: 295px;
+    height: 180px;
+    padding: 10px;
+  }
+  .decorative-image {
+    height: 400px;
+    width: 320px;
+  }
 }
 @media (max-width: 850px) {
 }
