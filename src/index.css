@@ -42,7 +42,8 @@ body {
 }
 
 .home-container {
-  background-color: rgba(170, 231, 192, 1);
+  /* background-color: rgba(170, 231, 192, 1); */
+  background-color: none;
   text-align: center;
   padding: 40px 10px;
   margin: 0vw 3vw;
