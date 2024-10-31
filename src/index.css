@@ -562,7 +562,7 @@ body {
 
   .who-are-we-description {
     font-size: 18px;
-    width: 320px;
+    width: auto;
     align-items: center;
     margin-left: 0;
   }
@@ -604,13 +604,13 @@ body {
     margin-left: 0px;
   }
   .testimonals-p {
-    width: 300px;
+    width: auto;
     padding-left: 30px;
     line-height: 1.2;
   }
 
   .additional-image1 {
-    width: 420px;
+    width: auto;
     padding: 0px;
   }
   .stats-section {
@@ -640,7 +640,8 @@ body {
     margin-left: 0 auto;
   }
   .decorative-image {
-    padding: 40px;
+    padding: 0px;
+    width: auto;
   }
   .text-overlay {
     position: absolute;
@@ -657,7 +658,7 @@ body {
   }
 
   .additional-image {
-    width: 390px;
+    width: auto;
     padding: 0px;
     margin: 0px auto;
   }
@@ -949,6 +950,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 850vh;
+    top: 70%;
     min-width: 200dvw;
     width: auto;
     background-size: cover;
@@ -1082,6 +1084,43 @@ body {
 
   .no-scroll {
     overflow: hidden;
+  }
+  .decorative-image {
+    width: auto;
+    margin: 0px auto;
+  }
+
+  .read-more-button {
+    padding: 20px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .right-arrows {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+  }
+
+  .arrow {
+    width: 18px;
+    height: 18px;
+    stroke-width: 2px;
+  }
+
+  .right-arrows .arrow + .arrow {
+    margin-left: -5px;
+  }
+
+  .read-more-button:hover {
+    background-color: transparent;
   }
 }
 
