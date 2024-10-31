@@ -768,7 +768,7 @@ body {
     height: 160px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1279px) {
   .stat-text {
     font-size: 20px;
     padding: 10px;
@@ -845,7 +845,7 @@ body {
     margin-right: 35px;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
     padding: 10px;
@@ -1139,118 +1139,6 @@ body {
     z-index: 5;
   }
 
-  .description-text {
-    font-size: 20px;
-    padding: 10px;
-  }
-  .who-are-we-section {
-    margin-right: 0px;
-  }
-  .who-are-we-title {
-    font-size: 20px;
-    margin-left: 0px;
-    text-align: center;
-  }
-
-  .who-are-we-description {
-    font-size: 18px;
-    width: auto;
-    align-items: center;
-    margin-right: 15px;
-    padding: 10px;
-  }
-
-  .read-more-button {
-    font-size: 16px;
-    padding: 15px;
-  }
-
-  .overlay-text,
-  .subtext-overlay {
-    font-size: 2rem;
-  }
-
-  .testimonals-container img {
-    width: 180px;
-    height: 100px;
-  }
-
-  .split-text {
-    font-size: 1.2rem;
-  }
-
-  .after-triangle-image {
-    width: auto;
-    margin: 0px auto;
-  }
-  .fixed-background {
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 1100vh;
-    top: 60%;
-    min-width: 200dvw;
-    width: auto;
-    background-size: cover;
-  }
-  .testimonals-container {
-    margin-left: 0px;
-  }
-  .testimonals-p {
-    width: 300px;
-    padding-left: 0px;
-    line-height: 1.2;
-  }
-
-  .stats-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 auto;
-    background-color: transparent;
-    font-size: small;
-    color: black;
-    font-weight: 100;
-    margin: 0px;
-  }
-  .stat-text {
-    font-size: 16px;
-    color: black;
-    font-weight: bold;
-  }
-  .stat-item {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    margin-left: 0 auto;
-  }
-  .decorative-image {
-    padding: 40px;
-    width: auto;
-  }
-  .text-overlay {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    color: black;
-    font-size: 2rem;
-    text-align: center;
-    z-index: 1;
-    padding: 0px;
-    font-family: "Rosewood Regular";
-    width: 350px;
-  }
-
-  .additional-image,
-  .additional-image1 {
-    width: auto;
-    padding: 0px;
-    margin: 0px auto;
-  }
   .hamburger {
     display: block;
     font-size: 24px;
@@ -1323,40 +1211,5 @@ body {
 
   .no-scroll {
     overflow: hidden;
-  }
-  .testimonial-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 1dvw;
-  }
-
-  .Larrow-container {
-    display: flex;
-    align-items: center;
-    margin-right: 0px;
-  }
-  .Rarrow-container {
-    display: flex;
-    align-items: center;
-    margin-left: 0px;
-  }
-  .Larrow-container img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid transparent;
-    margin: 0;
-  }
-
-  .Larrow-container svg {
-    display: inline-block;
-    padding-left: 0px;
-  }
-  .testimonals-container img {
-    width: 200px;
-    height: 150px;
-    margin: -20px;
   }
 }
