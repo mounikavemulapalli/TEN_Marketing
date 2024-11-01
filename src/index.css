@@ -456,6 +456,7 @@ body {
 .logo {
   display: flex;
   align-items: flex-start;
+  margin-top: -35px;
 }
 
 .logo-text {
@@ -673,7 +674,7 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: yellow;
+    background-color: transparent;
     color: #000;
     z-index: 5;
   }
@@ -820,6 +821,14 @@ body {
   .the-text {
     margin-left: 0px;
   }
+  .description-text {
+    font-size: 30px;
+    width: auto;
+    padding: 20px;
+  }
+  .logo {
+    margin-top: 20px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .hamburger {
@@ -927,7 +936,7 @@ body {
   .overlay-text,
   .subtext-overlay {
     font-size: 2rem;
-    transform: translateX(10px); 
+    transform: translateX(10px);
     padding: 20px;
     align-items: center;
     width: auto;
@@ -1023,7 +1032,7 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: yellow;
+    background-color: white;
     color: #000;
     z-index: 5;
   }
@@ -1127,6 +1136,9 @@ body {
   .additional-image {
     transform: translateX(-10px);
   }
+  .logo {
+    margin-top: 8%;
+  }
 }
 
 @media only screen and (max-width: 1105px) {
@@ -1192,7 +1204,7 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: yellow;
+    background-color: transparent;
     color: #000;
     z-index: 5;
   }
@@ -1260,5 +1272,10 @@ body {
   .additional-image1 {
     width: auto;
     padding: 0px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .additional-image {
+    width: auto;
   }
 }
