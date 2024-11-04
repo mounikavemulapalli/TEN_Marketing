@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LOGOSVG from "./files/LOGOSVG"; // Adjust the path as necessary
-import "../index.css";
+import "./Home.css";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -72,9 +72,7 @@ const Navbar = () => {
       <p className='description-text'>
         Something about the website and the purpose of its creation.
         <br />
-        The founder's ambition to change the world of
-        Marketing.
-        
+        The founder's ambition to change the world of Marketing.
       </p>
 
       <div className='triangle-down' />
