@@ -81,18 +81,17 @@ const Home = () => {
               company is about and how it came <br />
               to be.
               <br />
-              The founder's reason for creating this company and his aims,
-              ambitions,
-              <br /> goals, and everything else.
+              The founder's reason for creating this company <br />
+              and his aims, ambitions, goals, and everything else.
             </p>
             <p className='who-are-we-description'>
-              Information about what the
-              <br /> company is about and how it came
-              <br /> to be.
+              Information about what the <br />
+              company is about and how it came <br />
+              to be.
               <br />
-              The founder's reason for creating this
-              <br /> company and his aims, ambitions,
-              <br /> goals, and everything else.
+              The founder's reason for creating this company
+              <br />
+              and his aims, ambitions, goals, and everything else.
             </p>
           </div>
           {/* Additional Image Section with Overlay Text */}

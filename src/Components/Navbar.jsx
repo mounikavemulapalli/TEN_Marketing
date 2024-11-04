@@ -1,20 +1,37 @@
 import React, { useState } from "react";
 import LOGOSVG from "./files/LOGOSVG"; // Adjust the path as necessary
-import "../index.css";
+import "./Home.css";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
+    if (!isMobileMenuOpen) {
+      document.body.classList.add("no-scroll");
+      document.documentElement.classList.add("no-scroll"); // For html element
+    } else {
+      document.body.classList.remove("no-scroll");
+      document.documentElement.classList.remove("no-scroll"); // For html element
+    }
+  };
+
+  const closeMenu = () => {
+    setMobileMenuOpen(false);
+    document.body.classList.remove("no-scroll");
+    document.documentElement.classList.remove("no-scroll");
   };
 
   return (
     <div className='home-container'>
+      {/* Overlay for mobile menu */}
+      {isMobileMenuOpen && <div className='overlay' onClick={closeMenu} />}
+
       {/* Hamburger Menu for Mobile */}
       <button className='hamburger' onClick={toggleMenu}>
         ☰
       </button>
+
       <div className='logo'>
         <LOGOSVG />
         <div className='logo-text'>
@@ -26,9 +43,8 @@ const Navbar = () => {
 
       <nav className={`navbar ${isMobileMenuOpen ? "active" : ""}`}>
         <ul className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
-          {/* Close button inside the overlay menu */}
           {isMobileMenuOpen && (
-            <button className='close-btn' onClick={toggleMenu}>
+            <button className='close-btn' onClick={closeMenu}>
               ×
             </button>
           )}
@@ -54,13 +70,9 @@ const Navbar = () => {
       </nav>
 
       <p className='description-text'>
-        Something about the website and the purpose of
+        Something about the website and the purpose of its creation.
         <br />
-        its creation.
-        <br />
-        The founder's ambition to change the world of
-        <br />
-        Marketing.
+        The founder's ambition to change the world of Marketing.
       </p>
 
       <div className='triangle-down' />
