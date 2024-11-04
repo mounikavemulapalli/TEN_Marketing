@@ -922,10 +922,11 @@ body {
   }
 
   .who-are-we-description {
-    font-size: 16px;
+    font-size: 17px;
     width: auto;
     align-items: center;
-    margin: 0px;
+    margin-left: -30px;
+    padding: 30px;
   }
 
   .read-more-button {
