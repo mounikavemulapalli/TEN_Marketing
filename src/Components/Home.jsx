@@ -78,20 +78,19 @@ const Home = () => {
             <h1 className='who-are-we-title'>WHO ARE WE?</h1>
             <p className='who-are-we-description'>
               Information about what the <br />
-              company is about and how it came <br />
-              to be.
+              company is about and how it came to be.
               <br />
-              The founder's reason for creating this company <br />
-              and his aims, ambitions, goals, and everything else.
+              The founder's reason for creating <br />
+              this company and his aims, ambitions,
+              <br /> goals, and everything else.
             </p>
             <p className='who-are-we-description'>
               Information about what the <br />
-              company is about and how it came <br />
-              to be.
+              company is about and how it came to be.
               <br />
-              The founder's reason for creating this company
-              <br />
-              and his aims, ambitions, goals, and everything else.
+              The founder's reason for creating <br />
+              this company and his aims, ambitions,
+              <br /> goals, and everything else.
             </p>
           </div>
           {/* Additional Image Section with Overlay Text */}
