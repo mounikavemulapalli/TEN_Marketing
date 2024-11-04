@@ -32,7 +32,7 @@ const Navbar = () => {
         ☰
       </button>
 
-      <div className='logo'>
+      <div className='logo1'>
         <LOGOSVG />
         <div className='logo-text'>
           <span className='the-text'>The </span>

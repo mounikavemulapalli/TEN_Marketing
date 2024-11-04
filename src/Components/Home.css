@@ -375,8 +375,8 @@ body {
   display: inline-block;
   padding-left: 30px;
 }
-.logo svg {
-  margin-left: -40dvw;
+.logo1 svg {
+  margin-left: -42dvw;
 }
 .testimonals-p {
   font-size: 22px;
@@ -453,7 +453,7 @@ body {
   color: black;
   font-weight: bold;
 }
-.logo {
+.logo1 {
   display: flex;
   align-items: flex-start;
   margin-top: -35px;
@@ -811,7 +811,7 @@ body {
   .nav-links li a:hover {
     background-color: transparent;
   }
-  .logo svg {
+  .logo1 svg {
     margin-top: -15px;
     margin-left: -35dvw;
   }
@@ -826,7 +826,7 @@ body {
     width: auto;
     padding: 20px;
   }
-  .logo {
+  .logo1 {
     margin-top: 20px;
   }
 }
@@ -1136,7 +1136,7 @@ body {
   .additional-image {
     transform: translateX(-10px);
   }
-  .logo {
+  .logo1 {
     margin-top: 8%;
   }
 }
@@ -1277,5 +1277,10 @@ body {
 @media only screen and (max-width: 1200px) {
   .additional-image {
     width: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .logo1 {
+    margin-left: 30px;
   }
 }
