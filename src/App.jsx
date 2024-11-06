@@ -1,6 +1,4 @@
 import React from "react";
-// import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
@@ -22,8 +20,8 @@ export default function App() {
         <Route path='/partners' element={<Partners />} />
         <Route path='/join-us' element={<JoinUs />} />
         <Route path='/contact' element={<ContactUS />} />
-        <Route path='/footer' element={<Footer />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

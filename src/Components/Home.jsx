@@ -3,6 +3,16 @@ import STEPSVG from "./files/STEPSVG";
 import RARROWSVG from "./files/RARROWSVG";
 import LARROWSVG from "./files/LARROWSVG";
 import { useMediaQuery } from "react-responsive";
+import "./About.css";
+import { FaGreaterThan } from "react-icons/fa6";
+import logo from "../assets/Capture.jpg";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { RiFacebookCircleFill } from "react-icons/ri";
+import { BsInstagram } from "react-icons/bs";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 const Home = () => {
   return (
     <section>
@@ -349,7 +359,77 @@ const Home = () => {
         <p className='testimonals-p'>Position, Company Name</p>
         <hr className='hr1' />
       </div>
-      <div className='About'>About section</div>
+      <div className='footer-container'>
+        <h1>About Us</h1>
+        <h2 className='footer-description'>
+          Information about what the company is about and how it came to be. The
+          founder's reason for creating this company, his aims, ambitions,
+          goals, and everything else.
+        </h2>
+
+        <div className='footer-content'>
+          <div className='footer-insights'>
+            <span className='footer-section-title'>Get Insights</span>
+            <div className='footer-links'>
+              <div className='footer-link-item'>
+                <FaGreaterThan className='icon' />
+                <h3>Clients</h3>
+              </div>
+              <div className='footer-link-item'>
+                <FaGreaterThan className='icon' />
+                <h3>Partners</h3>
+              </div>
+              <div className='footer-link-item'>
+                <FaGreaterThan className='icon' />
+                <h3>Join Us</h3>
+              </div>
+            </div>
+            <img
+              src={logo}
+              alt='Company Logo'
+              className='footer-logo'
+              style={{ marginTop: "100px" }}
+            />
+          </div>
+
+          <div className='footer-contact'>
+            <span className='footer-section-title'>Contact Info</span>
+            <div className='footer-contact-details'>
+              <div className='footer-contact-item'>
+                <FaLocationDot className='icon' />
+                <h3 style={{ textDecoration: "none" }}>Delhi</h3>
+              </div>
+              <div className='footer-contact-item'>
+                <MdEmail className='icon' />
+                <small className='footer-email'>
+                  contact@entrepreneurshi
+                  <br />
+                  pnetwork.net
+                </small>
+              </div>
+              <div className='footer-contact-item'>
+                <FaPhoneAlt className='icon' />
+                <h3>+917428662353</h3>
+              </div>
+            </div>
+
+            <div className='footer-socials' style={{ marginTop: "60px" }}>
+              <span
+                className='footer-social-title'
+                style={{ marginLeft: "36px" }}
+              >
+                Follow Us
+              </span>
+              <div className='footer-social-icons'>
+                <RiFacebookCircleFill className='social-icon' />
+                <BsInstagram className='social-icon' />
+                <FaTwitter className='social-icon' />
+                <FaLinkedin className='social-icon' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

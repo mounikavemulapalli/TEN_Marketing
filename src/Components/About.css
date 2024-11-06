@@ -1,0 +1,117 @@
+/* Footer Section */
+.footer-container {
+  width: 80%;
+  border: 2px solid black;
+  margin-left: 10%;
+  margin-top: 5%;
+  background-color: rgba(255, 140, 98, 1);
+  padding: 2% 0;
+  border-radius: 50%;
+}
+.footer-container h1 {
+  text-align: center;
+  font-size: 46px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+.footer-description {
+  width: 73%;
+  font-size: 26px;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "Roboto-Bold", "Roboto", sans-serif;
+}
+
+/* Main Content */
+.footer-content {
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+/* Insights Section */
+.footer-insights .footer-section-title {
+  font-size: 33px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.footer-link-item {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.footer-link-item h3 {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: rgb(153, 153, 153);
+  font-size: 25px;
+  text-decoration: underline;
+}
+.footer-logo {
+  margin-top: 110px;
+  margin-left: 95px;
+}
+
+/* Contact Section */
+.footer-contact {
+  margin-left: 268px;
+  width: 30%;
+  margin-bottom: 71px;
+}
+.footer-contact .footer-section-title {
+  font-size: 33px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+.footer-contact-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.footer-contact-item h3,
+.footer-email {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: rgb(153, 153, 153);
+  font-size: 20px;
+  text-decoration: underline;
+}
+.footer-contact-item .icon {
+  color: rgb(255, 200, 36);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Social Media Section */
+.footer-socials {
+  margin-top: 60px;
+  margin-right: px;
+}
+.footer-social-title {
+  font-size: 33px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 36px;
+}
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
+}
