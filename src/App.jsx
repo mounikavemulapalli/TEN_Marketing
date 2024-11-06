@@ -15,14 +15,14 @@ export default function App() {
   return (
     <>
     <Navbar />
-      {/* 
+      
       <Home />
-      <Client /> */}
+      <Client />
       <Services />
-      {/* <ContactUS />
+      <ContactUS />
       <Partners />
       <JoinUs />
-      <Footer /> */}
+      <Footer /> 
     </>
   );
 }
