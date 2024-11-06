@@ -69,11 +69,7 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <p className='description-text'>
-        Something about the website and the purpose of its creation.
-        <br />
-        The founder's ambition to change the world of Marketing.
-      </p>
+      
 
       <div className='triangle-down' />
     </div>

@@ -13,7 +13,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Services = () => {
   return (
-    <div>
+    <div className="main-head">
       
       <span id="head">
      
