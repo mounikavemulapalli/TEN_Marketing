@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'Ribeye Marrow", serif';
+    src: url('./fonts/rosewood-w01-regular.woff2') format('woff2'),
+         url('./fonts/rosewood-w01-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo';
+    src: url('./fonts/museo-w01-700.woff2') format('woff2'),
+         url('./fonts/museo-w01-700.woff') format('woff');
+         font-weight: 700;
+         font-style: normal;
+}
+
+
+body {
+    background-image: url("https://static.wixstatic.com/media/4c2d9489b9554ec7a9fd08808b4d8a6a.jpg/v1/fill/w_1349,h_641,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4c2d9489b9554ec7a9fd08808b4d8a6a.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); 
+    z-index: -1;
+}
+
+/* CSS for Services Component */
+
+#head {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px 0;
+    margin-left: 80px;
+    background-color: rgb(255, 140, 98);
+    border-bottom: 5px solid #df5624;
+    border-radius: 50%;
+    position: relative; 
+}
+
+.head-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: open sans, sans-serif;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 40px; 
+    font-weight: bold;
+    border-bottom: 4px solid white;
+}
+
+.center-title-text{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-family: 'museo-w01-700', serif;
+   
+    transform: translate(-50%, -50%); 
+    color: #000000; 
+    font-size: 32px; 
+    font-weight: bold;
+}
+
+/* section 2 */
+.services-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+    margin-left: 60px;
+    margin-top: 5px;
+}
+.service-img{
+    border-radius: 50%;
+}
+.service-title {
+    width: 51%;
+    font-size: 30px;
+    font-family: "Ribeye Marrow", serif;
+    font-weight: 400;
+}
+
+
+.service-explain{
+    width: 52%;
+    font-size: 23px;
+    line-height: 1.6rem;
+    margin-top: 3.5rem;
+    color: white;
+}
+.service-btn {
+    margin-top: 50px;
+    font-size: 16px;
+    text-shadow: 0.71px 0.71px 0 rgb(255, 151, 151);
+    padding: 11px;
+    letter-spacing: 1.2px;
+    font-family: oswald-medium, oswald, sans-serif;
+    background-color: #df5624;
+    font-weight: 610;
+    color: white;
+    width: 111px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease, visibility 0s; 
+}
+
+.service-btn:hover {
+    background-color: #3c10db; 
+    color: #fff;               
+    transform: scale(1.05); 
+    cursor: pointer;   
+}
+
+/* about section  */
+.about-container{
+    width: 80%;
+    border: 2px solid black;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: #000000;
+}
+.about-container h1{
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+    font-family: open sans, sans-serif;
+    color: #fff;
+}
+.about-container h2{
+   
+    width: 73%;
+    font-size: 26px;
+    text-align: center;
+    margin:0 auto ;
+    color: #fff;
+    font-family: roboto-bold, roboto, sans-serif;
+}
+/* ======== */
+.about-container2{
+   
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.about-get span{
+    font-size: 33px;
+    font-family: open sans, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.about-client {
+    display: flex;
+    
+    flex-direction: column;
+    margin-top: 20px;
+
+   
+   
+  }
+  
+  .client-item {
+    display: flex;
+    align-items: center;
+    gap: 28px; 
+  }
+  .client-item h3{
+    cursor: pointer;
+    font-family: open sans, sans-serif;
+    font-weight: bold;
+   color:  rgb(153,153,153);
+   font-size: 25px;
+   text-decoration:underline ;
+  }
+  .client-small{
+    cursor: pointer;
+    font-family: open sans, sans-serif;
+    font-weight: bold;
+   color:  rgb(153,153,153);
+   font-size: 20px;
+   text-decoration:underline ;
+  }
+  .client-item .icon{
+    color: rgb(255,200,36);
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  /* =============== */
+  .about-contact{
+    /* border: 1px solid red; */
+    margin-left: 268px;
+
+    width: 30%;
+    margin-bottom: 71px;
+  }
+  .about-contact span{
+    font-size: 33px;
+    font-family: open sans, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.contact-client{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+
+
+/* =====social=== */
+.about-social-icons{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+   
+    margin-top: 20px;
+}
+.social-icon{
+    font-size: 53px;
+    color: rgb(255, 200, 36);
+}
