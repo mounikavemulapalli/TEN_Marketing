@@ -55,16 +55,16 @@ const Navbar = () => {
             <a href='/clients'>Clients</a>
           </li>
           <li>
-            <a href='#'>Services</a>
+            <a href='/services'>Services</a>
           </li>
           <li>
             <a href='/partners'>Partners</a>
           </li>
           <li>
-            <a href='#'>Join Us</a>
+            <a href='/join-us'>Join Us</a>
           </li>
           <li>
-            <a href='#'>Contact</a>
+            <a href='/contact'>Contact</a>
           </li>
         </ul>
       </nav>
