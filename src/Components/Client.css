@@ -1,9 +1,4 @@
 body{
- background-image: url(https://static.wixstatic.com/media/4c2d9489b9554ec7a9fd08808b4d8a6a.jpg/v1/fill/w_1899,h_869,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4c2d9489b9554ec7a9fd08808b4d8a6a.jpg);
- background-size: "cover";
- background-position: "center";
- background-repeat: no-repeat;
- background-attachment: fixed; 
  height: 100vh !important;
  min-height: 100%;
  margin: 0;
@@ -158,21 +153,49 @@ transition: background 0.3s ease;
 .btn-read:hover{
  background: linear-gradient(229deg, #ff4f4f 0%, #f03f3f 50%, #ee5151 100%)
 }
+@media only screen and (max-width: 320px) {
+  #client-img {
+      width: 297px !important;
+      height: 85px !important;
+      max-height: 97px !important;
+      max-width: 321px;
+      margin-left: -7% !important;
 
- @media only screen and (max-width: 430px) {
+  }
+ 
+    .circle {
+      max-height: 232px !important;
+
+        height: 250px !important;
+        width: 93% !important;
+        margin-left: 9% !important;
+ 
+      }
+      .company-div{
+        padding-left: 5% !important;
+
+      }
+}
+
+@media only screen and (max-width: 360px) {
+  .company-div {
+      padding-left: 9% !important;
+  }
+}
+
+ @media only screen and (max-width: 430px){
  #client-img{
-      width: 437px !important;
-   height: 110px !important;
-   margin-left: 0% !important;
+  width: 460px !important;
+  height: 134px !important;
+  margin-left: -7% !important;
    margin-top: 34% !important;
 
  }
  .circle{
    margin-top: 16%;
    height: 293px !important;
-   width: 108% !important;
-
-   margin-left: 10%;
+   width: 81% !important;
+   margin-left: 13% !important;
 
 }
 .first-section {
@@ -199,16 +222,41 @@ transition: background 0.3s ease;
    margin-top: -11%;
 
 }
+
 .trust-div {
- margin-top: -15px;
+ margin-top: -53px;
+ 
+ margin-left: 33%;
+
 }
 .first-section-img h1{
  font-size: 18px;
  margin-top: -13%;
+}
+.box{
+  width: 267px;
+  height: 273px;
+  margin-left: -8%;
 
+}
+.company-name{
+  margin-left: 4px;
+
+}
+.company-description {
+  width: 84%;
+  margin-top: 15% !important;
+  margin-left: 6%;
+
+}
+.company-div  .last-company{
+  width: 84% !important;
+  margin-top: 15% !important;
 }
 .Button-container{
  margin-bottom: 23%;
+ margin-left: 15%;
+
 }
 
 } 
@@ -244,12 +292,14 @@ transition: background 0.3s ease;
  .circle{
    height: 634px;
    width: 88%;
+   margin-left: 6%;
+
  }
 
  #client-img {
-   width: 828px;
+   width: 880px;
    height: 244px;
-   margin-left: -15%;
+   margin-left: -7%;
 
 }
 .company-div{
@@ -267,15 +317,22 @@ transition: background 0.3s ease;
 }
 
 }
+@media only screen and (width: 840px) {
+
+#client-img{
+  margin-left: -3% !important;
+
+}
+}
 @media only screen and (width: 1280px) {
   #client-img{
-   margin-left: -7%;
+   margin-left: -11% !important;
   }
   .company-div{
    margin-left: 93px !important;
   }
   .circle{
-   margin-left: -4%;
+   /* margin-left: -8% !important; */
 
   }
 }
