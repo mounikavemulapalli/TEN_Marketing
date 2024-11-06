@@ -25,7 +25,7 @@ body {
   top: 55%;
   left: 0;
   width: 100%;
-  min-height: 850vh;
+  min-height: 880vh;
   z-index: -1;
   overflow-x: hidden;
 }
