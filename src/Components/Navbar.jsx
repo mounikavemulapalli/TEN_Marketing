@@ -55,7 +55,7 @@ const Navbar = () => {
             <a href='/clients'>Clients</a>
           </li>
           <li>
-            <a href='#'>Services</a>
+            <a href='/services'>Services</a>
           </li>
           <li>
             <a href='/partners'>Partners</a>
