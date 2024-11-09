@@ -100,7 +100,6 @@
 /* Social Media Section */
 .footer-socials {
   margin-top: 60px;
-  margin-right: px;
 }
 .footer-social-title {
   font-size: 33px;
@@ -114,4 +113,74 @@
   align-items: center;
   gap: 18px;
   margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .footer-container {
+    width: 360px;
+    height: 700px;
+    border-radius: 50%;
+    margin: 0px auto;
+  }
+
+  .footer-description {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .footer-contact {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .footer-links {
+    margin: 0;
+  }
+
+  .footer-social-title {
+    margin-left: 5px;
+  }
+  .footer-logo {
+    margin: 0px;
+    height: 70px;
+    margin-left: 55px;
+  }
+
+  .footer-insights .footer-section-title {
+    font-size: 20px;
+  }
+  .footer-contact .footer-section-title {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .footer-contact-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .footer-socials {
+    margin-top: 0px;
+  }
+  .footer-social-title {
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 35px;
+  }
+  .footer-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    margin: 0px;
+    width: 65%;
+  }
 }

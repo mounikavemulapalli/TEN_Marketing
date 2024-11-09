@@ -384,12 +384,7 @@ const Home = () => {
                 <h3>Join Us</h3>
               </div>
             </div>
-            <img
-              src={logo}
-              alt='Company Logo'
-              className='footer-logo'
-              style={{ marginTop: "100px" }}
-            />
+            <img src={logo} alt='Company Logo' className='footer-logo' />
           </div>
 
           <div className='footer-contact'>
@@ -397,7 +392,7 @@ const Home = () => {
             <div className='footer-contact-details'>
               <div className='footer-contact-item'>
                 <FaLocationDot className='icon' />
-                <h3 style={{ textDecoration: "none" }}>Delhi</h3>
+                <h3>Delhi</h3>
               </div>
               <div className='footer-contact-item'>
                 <MdEmail className='icon' />
@@ -413,13 +408,8 @@ const Home = () => {
               </div>
             </div>
 
-            <div className='footer-socials' style={{ marginTop: "60px" }}>
-              <span
-                className='footer-social-title'
-                style={{ marginLeft: "36px" }}
-              >
-                Follow Us
-              </span>
+            <div className='footer-socials'>
+              <span className='footer-social-title'>Follow Us</span>
               <div className='footer-social-icons'>
                 <RiFacebookCircleFill className='social-icon' />
                 <BsInstagram className='social-icon' />

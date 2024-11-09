@@ -19,13 +19,13 @@ body {
 .fixed-background {
   background-image: url("https://static.wixstatic.com/media/c3e3003d46a34414812aa2c189570a2c.jpg/v1/fill/w_1800,h_1296,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c3e3003d46a34414812aa2c189570a2c.jpg");
   background-size: cover;
-  background-position: center top;
+  background-position: center;
   background-attachment: fixed;
   position: absolute;
   top: 55%;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 800vh;
   z-index: -1;
   overflow-x: hidden;
 }
@@ -776,6 +776,14 @@ body {
   .stat-text {
     font-size: 20px;
     padding: 10px;
+  }
+  .fixed-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 950vh;
+    min-width: 200dvw;
+    width: auto;
+    background-size: cover;
   }
 }
 @media only screen and (max-width: 1024px) {
