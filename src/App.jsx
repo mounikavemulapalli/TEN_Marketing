@@ -8,6 +8,7 @@ import Partners from "./Components/Partners";
 import JoinUs from "./Components/JoinUs";
 import ContactUS from "./Components/ContactUS";
 import Footer from "./Components/Footer";
+import Letschat from './Components/Letschat';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path='/contact' element={<ContactUS />} />
       </Routes>
       <Footer />
+       <Letschat />
     </Router>
   );
 }
