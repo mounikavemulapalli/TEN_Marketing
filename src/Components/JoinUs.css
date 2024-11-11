@@ -1,0 +1,83 @@
+/* joinUs.css */
+.JoinUs {
+  font-family: Arial, sans-serif;
+}
+
+
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.nav-links li {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Hero Section Styling */
+.hero {
+  background-color: #FF6F3C;
+  color: black;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 50% 50% 0 0 / 20%;
+}
+
+/* Feedback Section Styling */
+.feedback {
+  padding: 50px;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #FFCE47;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #FFCE47;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links li {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
