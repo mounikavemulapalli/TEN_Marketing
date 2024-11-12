@@ -1,0 +1,219 @@
+.sec_1 {
+  margin: 0 200px 0 200px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sec_2 img {
+  height: 350px;
+  padding: 80px;
+  margin: 0px;
+  text-align: center;
+  padding: 0 200px 0 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cont {
+  margin: 0;
+  padding: 0;
+  margin-top: -193px;
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img {
+  padding: 0;
+  margin: 0;
+}
+.sec_1 {
+  padding: 40px;
+  font-size: larger;
+  font-size: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .sec_3 {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  text-align: center;
+} */
+.sec_3 {
+  /* background-color: rgb(224, 235, 235); */
+  /* margin: 0 200px 0 200px; */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* width: 400px; */
+  font-size: 40px;
+  line-height: 50px;
+}
+/* #contact_part {
+  background: url(https://static.wixstatic.com/media/4c2d9489b9554ec7a9fd08808b4d8a6a.jpg/v1/fill/w_2880,h_1626,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/4c2d9489b9554ec7a9fd08808b4d8a6a.jpg);
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  background-size: cover;
+  /* background-position: center; */
+
+#head_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 290px 0;
+  flex-wrap: wrap;
+  /* margin-left: 80px; */
+  background-color: rgb(255, 140, 98);
+  border-bottom: 5px solid #df5624;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 80px 0 80px;
+
+  /* background: url(); */
+
+  /* margin-top: -273px; */
+}
+#head_cont svg {
+  height: 400px;
+  width: 500px;
+  flex-wrap: wrap;
+  display: flex;
+  position: absolute;
+}
+#head_cont p9 {
+  font-size: 50px;
+}
+/* .l1,{font-size: 20px;} */
+
+.contact_lastsec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#cont_color {
+  padding: 50px;
+  background: url(https://static.wixstatic.com/media/4c2d9489b9554ec7a9fd08808b4d8a6a.jpg/v1/fill/w_2880,h_1626,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/4c2d9489b9554ec7a9fd08808b4d8a6a.jpg);
+}
+.last {
+  color: rgb(162, 133, 133);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 40px;
+}
+
+#cont_color {
+  background-color: rgba(255, 255, 255, 0.5);
+
+  background-image: url("https://static.wixstatic.com/media/4c2d9489b9554ec7a9fd08808b4d8a6a.jpg/v1/fill/w_1899,h_869,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4c2d9489b9554ec7a9fd08808b4d8a6a.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* Default styles for desktop */
+
+  
+  /* Media Query for Tablets */
+  @media (max-width: 768px) {
+    .sec_1, .sec_3 {
+      margin: 0 20px;
+      font-size: 24px;
+    }
+    
+    .sec_2 img {
+      height: 250px;
+      padding: 0;
+    }
+    
+    .cont {
+      font-size: 40px;
+    }
+    
+    #head_cont {
+      padding: 150px 0;
+      border-radius: 30%;
+      margin: 0 40px;
+    }
+    
+    #head_cont svg {
+      height: 200px;
+      width: 250px;
+    }
+    
+    .last {
+      font-size: 24px;
+    }
+    
+    .contact_lastsec iframe {
+      width: 100%;
+      height: 300px;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 480px) {
+    .sec_1, .sec_3 {
+      margin: 0 0px;
+      font-size: 20px;
+    }
+    
+    .sec_2 img {
+      height: 150px;
+      margin: 0;
+      margin-left: -50px;
+      width: 500px;
+    }
+    
+    .cont {
+      font-size: 28px;
+      margin-top: -120px;
+    }
+    
+    #head_cont {
+      padding: 100px 0;
+      border-radius: 20%;
+      margin: 0 20px;
+    }
+    
+    #head_cont svg {
+      height: 150px;
+      width: 200px;
+    }
+    
+    .last {
+      font-size: 20px;
+    }
+    
+    .contact_lastsec iframe {
+      width: 100%;
+      height: 250px;
+    }
+  }
+  
+  /* General adjustments */
+  #contact_part, #cont_color {
+    background-attachment: scroll; /* to prevent fixed backgrounds on mobile */
+  }
+  
+  #head_cont p9 {
+    font-size: 24px;
+  }
+  
+  .contact_lastsec {
+    padding: 20px;
+  }
+  
+  .last {
+    padding: 20px;
+  }
+  
