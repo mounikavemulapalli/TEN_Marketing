@@ -6,7 +6,7 @@ function JoinUs() {
   return (
    <>
 
-{/* <div id="joinus"> */}
+<div id="joinus"> 
 <span id="head_one">
      
 <p>Something about the website and the purpose of it's <br />
@@ -78,7 +78,7 @@ marketing.</p>
     </g>
 </svg>
     </div>
-    {/* </div> */}
+    </div> 
    </>
   );
 }
