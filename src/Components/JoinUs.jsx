@@ -189,6 +189,7 @@ function JoinUs() {
           </svg>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
