@@ -40,10 +40,10 @@ export default function Footer() {
         <div className="follow-us">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="#" aria-label="Facebook"><Facebook /></a>
+{/*             <a href="#" aria-label="Facebook"><Facebook /></a>
             <a href="#" aria-label="Instagram"><Instagram /></a>
             <a href="#" aria-label="Twitter"><Twitter /></a>
-            <a href="#" aria-label="LinkedIn"><Linkedin /></a>
+            <a href="#" aria-label="LinkedIn"><Linkedin /></a> */}
           </div>
         </div>
       </div>
