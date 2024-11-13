@@ -22,7 +22,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   position: absolute;
-  top: 55%;
+  top: 30%;
   left: 0;
   width: 100%;
   height: 800vh;
@@ -53,7 +53,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 200px;
+  min-height: 120px;
   max-width: 90%;
   transform: translateY(10px);
   z-index: 1;
@@ -505,19 +505,23 @@ body {
   .nav-links {
     display: none;
     flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    top: 60px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
     right: 0;
-    background: #fff;
-    width: 180px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    z-index: 2;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 10;
+    /* transition: transform 0.3s ease; */
+    transform: translateX(-100%);
   }
-  .nav-links.show {
+
+  .nav-links.active {
     display: flex;
+    transform: translateX(0);
   }
+
   .logo-text {
     margin-right: -100px;
   }
@@ -542,7 +546,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 300px;
+    min-height: 120px;
     transform: translateY(10px);
     z-index: 5;
   }
@@ -911,7 +915,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 300px;
+    min-height: 120px;
     transform: translateY(10px);
     z-index: 5;
   }
@@ -1199,7 +1203,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 300px;
+    min-height: 120px;
     transform: translateY(10px);
     z-index: 5;
   }
